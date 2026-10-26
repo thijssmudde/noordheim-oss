@@ -1,0 +1,1139 @@
+{
+  "voices": {
+    "ravn": {
+      "commander": "Commander Ravn",
+      "clips": {
+        "deploy": [
+          {
+            "file": "/audio/commander/deploy-1-5701cb1da1.mp3",
+            "bytes": 51766,
+            "duration": 4.251859,
+            "text": "Northern Command online. Establish your base. Secure the crossings."
+          }
+        ],
+        "select": [
+          {
+            "file": "/audio/commander/select-1-81bac1f6f8.mp3",
+            "bytes": 17284,
+            "duration": 1.37619,
+            "text": "Standing by, Commander."
+          },
+          {
+            "file": "/audio/commander/select-2-2ce327e87f.mp3",
+            "bytes": 10075,
+            "duration": 0.770907,
+            "text": "Your orders?"
+          },
+          {
+            "file": "/audio/commander/select-3-e1689eb784.mp3",
+            "bytes": 16344,
+            "duration": 1.285374,
+            "text": "Ready for the next move."
+          }
+        ],
+        "move": [
+          {
+            "file": "/audio/commander/move-1-272a5267e3.mp3",
+            "bytes": 22613,
+            "duration": 1.827324,
+            "text": "Orders received. Moving out."
+          },
+          {
+            "file": "/audio/commander/move-2-50fa8ee0ab.mp3",
+            "bytes": 8821,
+            "duration": 0.675102,
+            "text": "On our way."
+          },
+          {
+            "file": "/audio/commander/move-3-d1364a3c79.mp3",
+            "bytes": 11642,
+            "duration": 0.889229,
+            "text": "Taking position."
+          }
+        ],
+        "attack": [
+          {
+            "file": "/audio/commander/attack-1-f848725193.mp3",
+            "bytes": 24808,
+            "duration": 1.99737,
+            "text": "Target confirmed. Open fire."
+          },
+          {
+            "file": "/audio/commander/attack-2-e9b4d08c8d.mp3",
+            "bytes": 16030,
+            "duration": 1.254943,
+            "text": "Engaging the enemy."
+          }
+        ],
+        "attackMove": [
+          {
+            "file": "/audio/commander/attackMove-1-4be8660824.mp3",
+            "bytes": 28569,
+            "duration": 2.315125,
+            "text": "Advance north. Engage at will."
+          }
+        ],
+        "hold": [
+          {
+            "file": "/audio/commander/hold-1-7c95439b60.mp3",
+            "bytes": 30137,
+            "duration": 2.443741,
+            "text": "Hold this position. Watch the approaches."
+          }
+        ],
+        "stop": [
+          {
+            "file": "/audio/commander/stop-1-859a1c3a06.mp3",
+            "bytes": 21986,
+            "duration": 1.759569,
+            "text": "Halt. Awaiting orders."
+          }
+        ],
+        "queued": [
+          {
+            "file": "/audio/commander/queued-1-e4dd054485.mp3",
+            "bytes": 18538,
+            "duration": 1.467823,
+            "text": "Production order confirmed."
+          }
+        ],
+        "constructionReady": [
+          {
+            "file": "/audio/commander/constructionReady-1-f28f5eac94.mp3",
+            "bytes": 33585,
+            "duration": 2.720839,
+            "text": "Construction complete. Systems online."
+          }
+        ],
+        "unitReady": [
+          {
+            "file": "/audio/commander/unitReady-1-4b019cc9da.mp3",
+            "bytes": 23554,
+            "duration": 1.901179,
+            "text": "Reinforcements ready for deployment."
+          }
+        ],
+        "armorReady": [
+          {
+            "file": "/audio/commander/armorReady-1-206a510a7e.mp3",
+            "bytes": 26375,
+            "duration": 2.137732,
+            "text": "Armor is ready. Give us a target."
+          }
+        ],
+        "enemySpotted": [
+          {
+            "file": "/audio/commander/enemySpotted-1-d0b0308652.mp3",
+            "bytes": 22927,
+            "duration": 1.84263,
+            "text": "Enemy contact. Stay sharp."
+          }
+        ],
+        "underAttack": [
+          {
+            "file": "/audio/commander/underAttack-1-98650e1f70.mp3",
+            "bytes": 18852,
+            "duration": 1.503197,
+            "text": "Our forces are taking fire."
+          }
+        ],
+        "baseUnderAttack": [
+          {
+            "file": "/audio/commander/baseUnderAttack-1-fb58a6ad6f.mp3",
+            "bytes": 37973,
+            "duration": 3.087347,
+            "text": "Command station under attack! Reinforce the perimeter."
+          }
+        ],
+        "unitLost": [
+          {
+            "file": "/audio/commander/unitLost-1-747dca23c3.mp3",
+            "bytes": 36406,
+            "duration": 2.957143,
+            "text": "Unit lost. Regroup and hold the line."
+          }
+        ],
+        "lowPower": [
+          {
+            "file": "/audio/commander/lowPower-1-89149a024f.mp3",
+            "bytes": 36406,
+            "duration": 2.969501,
+            "text": "Power grid overloaded. Bring another plant online."
+          }
+        ],
+        "powerRestored": [
+          {
+            "file": "/audio/commander/powerRestored-1-a577d4ff79.mp3",
+            "bytes": 35779,
+            "duration": 2.924331,
+            "text": "Grid restored. All systems operational."
+          }
+        ],
+        "insufficient": [
+          {
+            "file": "/audio/commander/insufficient-1-f208de5157.mp3",
+            "bytes": 21673,
+            "duration": 1.737642,
+            "text": "We need more supplies for that order."
+          }
+        ],
+        "queueFull": [
+          {
+            "file": "/audio/commander/queueFull-1-039ffbaa1e.mp3",
+            "bytes": 30137,
+            "duration": 2.437551,
+            "text": "Production queue is full. Stand by."
+          }
+        ],
+        "objective": [
+          {
+            "file": "/audio/commander/objective-1-883f8dbda7.mp3",
+            "bytes": 27942,
+            "duration": 2.269887,
+            "text": "Signal station secured. Keep moving."
+          }
+        ],
+        "wave": [
+          {
+            "file": "/audio/commander/wave-1-84c2e7cba3.mp3",
+            "bytes": 36719,
+            "duration": 3.002857,
+            "text": "Hostile reinforcements inbound. Defend the crossings."
+          }
+        ],
+        "victory": [
+          {
+            "file": "/audio/commander/victory-1-56f628f575.mp3",
+            "bytes": 38914,
+            "duration": 3.174966,
+            "text": "The fjord is ours. Well fought, Commander."
+          }
+        ],
+        "defeat": [
+          {
+            "file": "/audio/commander/defeat-1-6c61abe89b.mp3",
+            "bytes": 40481,
+            "duration": 3.312857,
+            "text": "Command is lost. Fall back. We will return."
+          }
+        ],
+        "radioCheck": [
+          {
+            "file": "/audio/commander/radioCheck-1-4378fe231b.mp3",
+            "bytes": 30764,
+            "duration": 2.505125,
+            "text": "Commander Ravn. Reading you loud and clear."
+          }
+        ]
+      }
+    },
+    "fjordborn": {
+      "commander": "Captain Sigrid Havn",
+      "clips": {
+        "deploy": [
+          {
+            "file": "/audio/commander/fjordborn/deploy-1-29b82f49e0.mp3",
+            "bytes": 39854,
+            "duration": 3.261814,
+            "text": "Havn on the line. Build fast, strike faster."
+          }
+        ],
+        "select": [
+          {
+            "file": "/audio/commander/fjordborn/select-1-2d2c4c3c05.mp3",
+            "bytes": 12896,
+            "duration": 1.012063,
+            "text": "Havn listening."
+          },
+          {
+            "file": "/audio/commander/fjordborn/select-2-afe7b30659.mp3",
+            "bytes": 13209,
+            "duration": 1.03941,
+            "text": "Point us somewhere."
+          },
+          {
+            "file": "/audio/commander/fjordborn/select-3-30c23d5aa2.mp3",
+            "bytes": 13523,
+            "duration": 1.058186,
+            "text": "Ready to raid."
+          }
+        ],
+        "move": [
+          {
+            "file": "/audio/commander/fjordborn/move-1-f54c295a6e.mp3",
+            "bytes": 12582,
+            "duration": 0.990952,
+            "text": "Moving quick!"
+          },
+          {
+            "file": "/audio/commander/fjordborn/move-2-49a2ac3408.mp3",
+            "bytes": 15404,
+            "duration": 1.215556,
+            "text": "Over the shingle."
+          },
+          {
+            "file": "/audio/commander/fjordborn/move-3-4fcfa57f43.mp3",
+            "bytes": 6626,
+            "duration": 0.484558,
+            "text": "On it."
+          }
+        ],
+        "attack": [
+          {
+            "file": "/audio/commander/fjordborn/attack-1-05ec1de7e2.mp3",
+            "bytes": 13836,
+            "duration": 1.089955,
+            "text": "Hit them hard!"
+          },
+          {
+            "file": "/audio/commander/fjordborn/attack-2-df4c541c10.mp3",
+            "bytes": 17911,
+            "duration": 1.427052,
+            "text": "Board them. Now!"
+          }
+        ],
+        "attackMove": [
+          {
+            "file": "/audio/commander/fjordborn/attackMove-1-04c85059fb.mp3",
+            "bytes": 25748,
+            "duration": 2.084195,
+            "text": "Sweep through, take everything."
+          }
+        ],
+        "hold": [
+          {
+            "file": "/audio/commander/fjordborn/hold-1-28c63f5620.mp3",
+            "bytes": 32644,
+            "duration": 2.650726,
+            "text": "Hold this position. Watch the approaches."
+          }
+        ],
+        "stop": [
+          {
+            "file": "/audio/commander/fjordborn/stop-1-dd34306716.mp3",
+            "bytes": 22300,
+            "duration": 1.791383,
+            "text": "Halt. Awaiting orders."
+          }
+        ],
+        "queued": [
+          {
+            "file": "/audio/commander/fjordborn/queued-1-a06ea81f15.mp3",
+            "bytes": 19792,
+            "duration": 1.57839,
+            "text": "Production order confirmed."
+          }
+        ],
+        "constructionReady": [
+          {
+            "file": "/audio/commander/fjordborn/constructionReady-1-f86d4fe9b2.mp3",
+            "bytes": 34839,
+            "duration": 2.829456,
+            "text": "Construction complete. Systems online."
+          }
+        ],
+        "unitReady": [
+          {
+            "file": "/audio/commander/fjordborn/unitReady-1-ecbfbaf590.mp3",
+            "bytes": 25748,
+            "duration": 2.068753,
+            "text": "Reinforcements ready for deployment."
+          }
+        ],
+        "armorReady": [
+          {
+            "file": "/audio/commander/fjordborn/armorReady-1-ae831530ee.mp3",
+            "bytes": 27002,
+            "duration": 2.190862,
+            "text": "Armor is ready. Give us a target."
+          }
+        ],
+        "enemySpotted": [
+          {
+            "file": "/audio/commander/fjordborn/enemySpotted-1-61ee910fa5.mp3",
+            "bytes": 20733,
+            "duration": 1.671837,
+            "text": "Enemy contact. Stay sharp."
+          }
+        ],
+        "underAttack": [
+          {
+            "file": "/audio/commander/fjordborn/underAttack-1-0420ace1c8.mp3",
+            "bytes": 19792,
+            "duration": 1.570658,
+            "text": "Our forces are taking fire."
+          }
+        ],
+        "baseUnderAttack": [
+          {
+            "file": "/audio/commander/fjordborn/baseUnderAttack-1-004a806516.mp3",
+            "bytes": 27315,
+            "duration": 2.205714,
+            "text": "They are at the landing! Everyone back!"
+          }
+        ],
+        "unitLost": [
+          {
+            "file": "/audio/commander/fjordborn/unitLost-1-a64e06b53d.mp3",
+            "bytes": 27002,
+            "duration": 2.173605,
+            "text": "We lost a crew. Keep moving."
+          }
+        ],
+        "lowPower": [
+          {
+            "file": "/audio/commander/fjordborn/lowPower-1-f6660731d3.mp3",
+            "bytes": 37033,
+            "duration": 3.008095,
+            "text": "Power grid overloaded. Bring another plant online."
+          }
+        ],
+        "powerRestored": [
+          {
+            "file": "/audio/commander/fjordborn/powerRestored-1-017182d23f.mp3",
+            "bytes": 36406,
+            "duration": 2.958707,
+            "text": "Grid restored. All systems operational."
+          }
+        ],
+        "insufficient": [
+          {
+            "file": "/audio/commander/fjordborn/insufficient-1-c66d35427c.mp3",
+            "bytes": 23240,
+            "duration": 1.874875,
+            "text": "We need more supplies for that order."
+          }
+        ],
+        "queueFull": [
+          {
+            "file": "/audio/commander/fjordborn/queueFull-1-40da455fa5.mp3",
+            "bytes": 30137,
+            "duration": 2.449478,
+            "text": "Production queue is full. Stand by."
+          }
+        ],
+        "objective": [
+          {
+            "file": "/audio/commander/fjordborn/objective-1-b8cd37aaa7.mp3",
+            "bytes": 28883,
+            "duration": 2.349864,
+            "text": "Signal station secured. Keep moving."
+          }
+        ],
+        "wave": [
+          {
+            "file": "/audio/commander/fjordborn/wave-1-d625b0a653.mp3",
+            "bytes": 38600,
+            "duration": 3.150567,
+            "text": "Hostile reinforcements inbound. Defend the crossings."
+          }
+        ],
+        "victory": [
+          {
+            "file": "/audio/commander/fjordborn/victory-1-ade78f7be2.mp3",
+            "bytes": 31704,
+            "duration": 2.581655,
+            "text": "The coast is ours! Good raiding."
+          }
+        ],
+        "defeat": [
+          {
+            "file": "/audio/commander/fjordborn/defeat-1-6c0d2d8c42.mp3",
+            "bytes": 31077,
+            "duration": 2.508821,
+            "text": "Back to the boats. We come again."
+          }
+        ],
+        "radioCheck": [
+          {
+            "file": "/audio/commander/fjordborn/radioCheck-1-b624f10d33.mp3",
+            "bytes": 39227,
+            "duration": 3.20127,
+            "text": "Captain Havn, coastal raiders. Loud and clear."
+          }
+        ]
+      }
+    },
+    "ironclad": {
+      "commander": "Colonel Brand Hammar",
+      "clips": {
+        "deploy": [
+          {
+            "file": "/audio/commander/ironclad/deploy-1-563af1cf10.mp3",
+            "bytes": 42048,
+            "duration": 3.43424,
+            "text": "Hammar. Pour the foundations. We hold here."
+          }
+        ],
+        "select": [
+          {
+            "file": "/audio/commander/ironclad/select-1-f98857f889.mp3",
+            "bytes": 7880,
+            "duration": 0.596984,
+            "text": "Hammar."
+          },
+          {
+            "file": "/audio/commander/ironclad/select-2-83237fb2a3.mp3",
+            "bytes": 8821,
+            "duration": 0.674603,
+            "text": "Speak."
+          },
+          {
+            "file": "/audio/commander/ironclad/select-3-c8021d70c4.mp3",
+            "bytes": 16971,
+            "duration": 1.347755,
+            "text": "The garrison waits."
+          }
+        ],
+        "move": [
+          {
+            "file": "/audio/commander/ironclad/move-1-743bd03123.mp3",
+            "bytes": 25748,
+            "duration": 2.081179,
+            "text": "Advancing. Steadily."
+          },
+          {
+            "file": "/audio/commander/ironclad/move-2-bfe0464d77.mp3",
+            "bytes": 13523,
+            "duration": 1.06678,
+            "text": "Moving the line."
+          },
+          {
+            "file": "/audio/commander/ironclad/move-3-892eada0ad.mp3",
+            "bytes": 10388,
+            "duration": 0.799501,
+            "text": "Understood."
+          }
+        ],
+        "attack": [
+          {
+            "file": "/audio/commander/ironclad/attack-1-29dd1b9f4d.mp3",
+            "bytes": 19165,
+            "duration": 1.516871,
+            "text": "Guns. Fire."
+          },
+          {
+            "file": "/audio/commander/ironclad/attack-2-b740ae308a.mp3",
+            "bytes": 10388,
+            "duration": 0.799206,
+            "text": "Break them."
+          }
+        ],
+        "attackMove": [
+          {
+            "file": "/audio/commander/ironclad/attackMove-1-b1c9fb608e.mp3",
+            "bytes": 30764,
+            "duration": 2.482993,
+            "text": "Forward. Crush what stands."
+          }
+        ],
+        "hold": [
+          {
+            "file": "/audio/commander/ironclad/hold-1-52639aa7ab.mp3",
+            "bytes": 31390,
+            "duration": 2.535238,
+            "text": "Hold this position. Watch the approaches."
+          }
+        ],
+        "stop": [
+          {
+            "file": "/audio/commander/ironclad/stop-1-99cb79bfcc.mp3",
+            "bytes": 24181,
+            "duration": 1.943039,
+            "text": "Halt. Awaiting orders."
+          }
+        ],
+        "queued": [
+          {
+            "file": "/audio/commander/ironclad/queued-1-b7835774b4.mp3",
+            "bytes": 20419,
+            "duration": 1.632653,
+            "text": "Production order confirmed."
+          }
+        ],
+        "constructionReady": [
+          {
+            "file": "/audio/commander/ironclad/constructionReady-1-e6f50bd898.mp3",
+            "bytes": 37973,
+            "duration": 3.095442,
+            "text": "Construction complete. Systems online."
+          }
+        ],
+        "unitReady": [
+          {
+            "file": "/audio/commander/ironclad/unitReady-1-6df8b1ba16.mp3",
+            "bytes": 24494,
+            "duration": 1.97585,
+            "text": "Reinforcements ready for deployment."
+          }
+        ],
+        "armorReady": [
+          {
+            "file": "/audio/commander/ironclad/armorReady-1-956a54542e.mp3",
+            "bytes": 27315,
+            "duration": 2.206259,
+            "text": "Armor is ready. Give us a target."
+          }
+        ],
+        "enemySpotted": [
+          {
+            "file": "/audio/commander/ironclad/enemySpotted-1-eed53caf94.mp3",
+            "bytes": 23867,
+            "duration": 1.926689,
+            "text": "Enemy contact. Stay sharp."
+          }
+        ],
+        "underAttack": [
+          {
+            "file": "/audio/commander/ironclad/underAttack-1-ba824ef1a1.mp3",
+            "bytes": 18852,
+            "duration": 1.51288,
+            "text": "Our forces are taking fire."
+          }
+        ],
+        "baseUnderAttack": [
+          {
+            "file": "/audio/commander/ironclad/baseUnderAttack-1-c11385b079.mp3",
+            "bytes": 34212,
+            "duration": 2.794535,
+            "text": "They test our walls. Man the batteries."
+          }
+        ],
+        "unitLost": [
+          {
+            "file": "/audio/commander/ironclad/unitLost-1-5a8371ed4c.mp3",
+            "bytes": 30450,
+            "duration": 2.472902,
+            "text": "A loss. The line holds."
+          }
+        ],
+        "lowPower": [
+          {
+            "file": "/audio/commander/ironclad/lowPower-1-0ba17f8b6b.mp3",
+            "bytes": 37660,
+            "duration": 3.072585,
+            "text": "Power grid overloaded. Bring another plant online."
+          }
+        ],
+        "powerRestored": [
+          {
+            "file": "/audio/commander/ironclad/powerRestored-1-4ad3d31e3a.mp3",
+            "bytes": 38600,
+            "duration": 3.151111,
+            "text": "Grid restored. All systems operational."
+          }
+        ],
+        "insufficient": [
+          {
+            "file": "/audio/commander/ironclad/insufficient-1-17554d1987.mp3",
+            "bytes": 24808,
+            "duration": 1.999751,
+            "text": "We need more supplies for that order."
+          }
+        ],
+        "queueFull": [
+          {
+            "file": "/audio/commander/ironclad/queueFull-1-5ea5013351.mp3",
+            "bytes": 31390,
+            "duration": 2.547823,
+            "text": "Production queue is full. Stand by."
+          }
+        ],
+        "objective": [
+          {
+            "file": "/audio/commander/ironclad/objective-1-9705702ce3.mp3",
+            "bytes": 30450,
+            "duration": 2.472336,
+            "text": "Signal station secured. Keep moving."
+          }
+        ],
+        "wave": [
+          {
+            "file": "/audio/commander/ironclad/wave-1-13950034e2.mp3",
+            "bytes": 37660,
+            "duration": 3.081723,
+            "text": "Hostile reinforcements inbound. Defend the crossings."
+          }
+        ],
+        "victory": [
+          {
+            "file": "/audio/commander/ironclad/victory-1-c506d762c1.mp3",
+            "bytes": 35779,
+            "duration": 2.902517,
+            "text": "The pass holds. As it always will."
+          }
+        ],
+        "defeat": [
+          {
+            "file": "/audio/commander/ironclad/defeat-1-c2fa7b1d3b.mp3",
+            "bytes": 37660,
+            "duration": 3.078163,
+            "text": "The walls have fallen. We rebuild."
+          }
+        ],
+        "radioCheck": [
+          {
+            "file": "/audio/commander/ironclad/radioCheck-1-77ead98974.mp3",
+            "bytes": 35152,
+            "duration": 2.872449,
+            "text": "Colonel Hammar, mountain garrison. Reading you."
+          }
+        ]
+      }
+    },
+    "hearthkin": {
+      "commander": "Major Liv Åker",
+      "clips": {
+        "deploy": [
+          {
+            "file": "/audio/commander/hearthkin/deploy-1-af30accf94.mp3",
+            "bytes": 43302,
+            "duration": 3.550567,
+            "text": "Åker here. Set up the depots, get the harvesters rolling."
+          }
+        ],
+        "select": [
+          {
+            "file": "/audio/commander/hearthkin/select-1-47986a9388.mp3",
+            "bytes": 9448,
+            "duration": 0.719388,
+            "text": "Åker here."
+          },
+          {
+            "file": "/audio/commander/hearthkin/select-2-030e27a129.mp3",
+            "bytes": 11642,
+            "duration": 0.908639,
+            "text": "What do you need?"
+          },
+          {
+            "file": "/audio/commander/hearthkin/select-3-820b7862f8.mp3",
+            "bytes": 16030,
+            "duration": 1.257324,
+            "text": "Column standing by."
+          }
+        ],
+        "move": [
+          {
+            "file": "/audio/commander/hearthkin/move-1-993af4641c.mp3",
+            "bytes": 11328,
+            "duration": 0.884898,
+            "text": "Rolling out."
+          },
+          {
+            "file": "/audio/commander/hearthkin/move-2-c66e755f18.mp3",
+            "bytes": 10075,
+            "duration": 0.771973,
+            "text": "On the road."
+          },
+          {
+            "file": "/audio/commander/hearthkin/move-3-7e7ad1e23e.mp3",
+            "bytes": 11642,
+            "duration": 0.906395,
+            "text": "Moving the column."
+          }
+        ],
+        "attack": [
+          {
+            "file": "/audio/commander/hearthkin/attack-1-a87438b0e5.mp3",
+            "bytes": 25435,
+            "duration": 2.041383,
+            "text": "Engage. Protect the column."
+          },
+          {
+            "file": "/audio/commander/hearthkin/attack-2-434bcf0c65.mp3",
+            "bytes": 10702,
+            "duration": 0.834785,
+            "text": "Open fire."
+          }
+        ],
+        "attackMove": [
+          {
+            "file": "/audio/commander/hearthkin/attackMove-1-3bd869cda6.mp3",
+            "bytes": 28569,
+            "duration": 2.322902,
+            "text": "Push forward, secure the supply line."
+          }
+        ],
+        "hold": [
+          {
+            "file": "/audio/commander/hearthkin/hold-1-d3f2b5caff.mp3",
+            "bytes": 30764,
+            "duration": 2.503787,
+            "text": "Hold this position. Watch the approaches."
+          }
+        ],
+        "stop": [
+          {
+            "file": "/audio/commander/hearthkin/stop-1-adfb428e91.mp3",
+            "bytes": 22300,
+            "duration": 1.79619,
+            "text": "Halt. Awaiting orders."
+          }
+        ],
+        "queued": [
+          {
+            "file": "/audio/commander/hearthkin/queued-1-d6a40083c3.mp3",
+            "bytes": 19165,
+            "duration": 1.530385,
+            "text": "Production order confirmed."
+          }
+        ],
+        "constructionReady": [
+          {
+            "file": "/audio/commander/hearthkin/constructionReady-1-95b757adc0.mp3",
+            "bytes": 36093,
+            "duration": 2.931134,
+            "text": "Construction complete. Systems online."
+          }
+        ],
+        "unitReady": [
+          {
+            "file": "/audio/commander/hearthkin/unitReady-1-0aa1d13d08.mp3",
+            "bytes": 24181,
+            "duration": 1.954626,
+            "text": "Reinforcements ready for deployment."
+          }
+        ],
+        "armorReady": [
+          {
+            "file": "/audio/commander/hearthkin/armorReady-1-648e3c1d2c.mp3",
+            "bytes": 26062,
+            "duration": 2.091066,
+            "text": "Armor is ready. Give us a target."
+          }
+        ],
+        "enemySpotted": [
+          {
+            "file": "/audio/commander/hearthkin/enemySpotted-1-e2a5f5a8fe.mp3",
+            "bytes": 23867,
+            "duration": 1.923288,
+            "text": "Enemy contact. Stay sharp."
+          }
+        ],
+        "underAttack": [
+          {
+            "file": "/audio/commander/hearthkin/underAttack-1-393dc242cb.mp3",
+            "bytes": 20106,
+            "duration": 1.609615,
+            "text": "Our forces are taking fire."
+          }
+        ],
+        "baseUnderAttack": [
+          {
+            "file": "/audio/commander/hearthkin/baseUnderAttack-1-bd490b1e4b.mp3",
+            "bytes": 27942,
+            "duration": 2.261746,
+            "text": "The depot is hit! Protect the stores!"
+          }
+        ],
+        "unitLost": [
+          {
+            "file": "/audio/commander/hearthkin/unitLost-1-48af633819.mp3",
+            "bytes": 26062,
+            "duration": 2.092245,
+            "text": "We lost a crew. Send another."
+          }
+        ],
+        "lowPower": [
+          {
+            "file": "/audio/commander/hearthkin/lowPower-1-ca5b5e8919.mp3",
+            "bytes": 37346,
+            "duration": 3.052018,
+            "text": "Power grid overloaded. Bring another plant online."
+          }
+        ],
+        "powerRestored": [
+          {
+            "file": "/audio/commander/hearthkin/powerRestored-1-cdb085c063.mp3",
+            "bytes": 35779,
+            "duration": 2.911361,
+            "text": "Grid restored. All systems operational."
+          }
+        ],
+        "insufficient": [
+          {
+            "file": "/audio/commander/hearthkin/insufficient-1-f57f238ed0.mp3",
+            "bytes": 30450,
+            "duration": 2.475714,
+            "text": "The stores are thin. We need more ore."
+          }
+        ],
+        "queueFull": [
+          {
+            "file": "/audio/commander/hearthkin/queueFull-1-10bb33656f.mp3",
+            "bytes": 30137,
+            "duration": 2.454331,
+            "text": "Production queue is full. Stand by."
+          }
+        ],
+        "objective": [
+          {
+            "file": "/audio/commander/hearthkin/objective-1-1cbee05739.mp3",
+            "bytes": 27942,
+            "duration": 2.257279,
+            "text": "Signal station secured. Keep moving."
+          }
+        ],
+        "wave": [
+          {
+            "file": "/audio/commander/hearthkin/wave-1-87166e9a67.mp3",
+            "bytes": 37973,
+            "duration": 3.090952,
+            "text": "Hostile reinforcements inbound. Defend the crossings."
+          }
+        ],
+        "victory": [
+          {
+            "file": "/audio/commander/hearthkin/victory-1-3d764f945a.mp3",
+            "bytes": 35466,
+            "duration": 2.891134,
+            "text": "The valley feeds us now. Fine work."
+          }
+        ],
+        "defeat": [
+          {
+            "file": "/audio/commander/hearthkin/defeat-1-535870a6a8.mp3",
+            "bytes": 36719,
+            "duration": 2.993243,
+            "text": "Load what we can. Fall back to the farms."
+          }
+        ],
+        "radioCheck": [
+          {
+            "file": "/audio/commander/hearthkin/radioCheck-1-dfc7741afc.mp3",
+            "bytes": 40481,
+            "duration": 3.301224,
+            "text": "Major Åker, valley logistics. Clear signal."
+          }
+        ]
+      }
+    },
+    "ashwalkers": {
+      "commander": "Captain Tor Aske",
+      "clips": {
+        "deploy": [
+          {
+            "file": "/audio/commander/ashwalkers/deploy-1-26e46c4d53.mp3",
+            "bytes": 35779,
+            "duration": 2.909274,
+            "text": "Aske. Scouts out. Find them first."
+          }
+        ],
+        "select": [
+          {
+            "file": "/audio/commander/ashwalkers/select-1-d175f52555.mp3",
+            "bytes": 10702,
+            "duration": 0.830703,
+            "text": "Aske here."
+          },
+          {
+            "file": "/audio/commander/ashwalkers/select-2-e90a6760de.mp3",
+            "bytes": 6940,
+            "duration": 0.502789,
+            "text": "Watching."
+          },
+          {
+            "file": "/audio/commander/ashwalkers/select-3-6257e885ba.mp3",
+            "bytes": 11328,
+            "duration": 0.877347,
+            "text": "Your call."
+          }
+        ],
+        "move": [
+          {
+            "file": "/audio/commander/ashwalkers/move-1-3ae19437d5.mp3",
+            "bytes": 16344,
+            "duration": 1.296916,
+            "text": "Moving through the trees."
+          },
+          {
+            "file": "/audio/commander/ashwalkers/move-2-d83155f2df.mp3",
+            "bytes": 10075,
+            "duration": 0.7639,
+            "text": "Relocating."
+          },
+          {
+            "file": "/audio/commander/ashwalkers/move-3-33b6967238.mp3",
+            "bytes": 9134,
+            "duration": 0.689161,
+            "text": "Out of sight."
+          }
+        ],
+        "attack": [
+          {
+            "file": "/audio/commander/ashwalkers/attack-1-127c1196d4.mp3",
+            "bytes": 17284,
+            "duration": 1.384036,
+            "text": "Target marked. Take it."
+          },
+          {
+            "file": "/audio/commander/ashwalkers/attack-2-7f680581be.mp3",
+            "bytes": 12896,
+            "duration": 0.993719,
+            "text": "Strike from cover."
+          }
+        ],
+        "attackMove": [
+          {
+            "file": "/audio/commander/ashwalkers/attackMove-1-3088e67ffa.mp3",
+            "bytes": 32644,
+            "duration": 2.659569,
+            "text": "Advance slow. Engage what you see."
+          }
+        ],
+        "hold": [
+          {
+            "file": "/audio/commander/ashwalkers/hold-1-4ae7aef446.mp3",
+            "bytes": 29196,
+            "duration": 2.355147,
+            "text": "Hold this position. Watch the approaches."
+          }
+        ],
+        "stop": [
+          {
+            "file": "/audio/commander/ashwalkers/stop-1-636543c91d.mp3",
+            "bytes": 21046,
+            "duration": 1.682766,
+            "text": "Halt. Awaiting orders."
+          }
+        ],
+        "queued": [
+          {
+            "file": "/audio/commander/ashwalkers/queued-1-aba59253da.mp3",
+            "bytes": 17911,
+            "duration": 1.427324,
+            "text": "Production order confirmed."
+          }
+        ],
+        "constructionReady": [
+          {
+            "file": "/audio/commander/ashwalkers/constructionReady-1-abecfdb872.mp3",
+            "bytes": 33271,
+            "duration": 2.691678,
+            "text": "Construction complete. Systems online."
+          }
+        ],
+        "unitReady": [
+          {
+            "file": "/audio/commander/ashwalkers/unitReady-1-5874f205bf.mp3",
+            "bytes": 22613,
+            "duration": 1.804286,
+            "text": "Reinforcements ready for deployment."
+          }
+        ],
+        "armorReady": [
+          {
+            "file": "/audio/commander/ashwalkers/armorReady-1-1f1d453799.mp3",
+            "bytes": 24494,
+            "duration": 1.975034,
+            "text": "Armor is ready. Give us a target."
+          }
+        ],
+        "enemySpotted": [
+          {
+            "file": "/audio/commander/ashwalkers/enemySpotted-1-2bfd3b7407.mp3",
+            "bytes": 32331,
+            "duration": 2.6361,
+            "text": "Contact. I see them before they see us."
+          }
+        ],
+        "underAttack": [
+          {
+            "file": "/audio/commander/ashwalkers/underAttack-1-255b4d986d.mp3",
+            "bytes": 18538,
+            "duration": 1.473107,
+            "text": "Our forces are taking fire."
+          }
+        ],
+        "baseUnderAttack": [
+          {
+            "file": "/audio/commander/ashwalkers/baseUnderAttack-1-ae9f5988d5.mp3",
+            "bytes": 27315,
+            "duration": 2.198526,
+            "text": "They found the camp. Pull back and fight."
+          }
+        ],
+        "unitLost": [
+          {
+            "file": "/audio/commander/ashwalkers/unitLost-1-1e7470532b.mp3",
+            "bytes": 27315,
+            "duration": 2.202834,
+            "text": "Lost a scout. Stay hidden."
+          }
+        ],
+        "lowPower": [
+          {
+            "file": "/audio/commander/ashwalkers/lowPower-1-d69e553c05.mp3",
+            "bytes": 35152,
+            "duration": 2.866916,
+            "text": "Power grid overloaded. Bring another plant online."
+          }
+        ],
+        "powerRestored": [
+          {
+            "file": "/audio/commander/ashwalkers/powerRestored-1-18e18413b3.mp3",
+            "bytes": 35152,
+            "duration": 2.85576,
+            "text": "Grid restored. All systems operational."
+          }
+        ],
+        "insufficient": [
+          {
+            "file": "/audio/commander/ashwalkers/insufficient-1-1b67e355b8.mp3",
+            "bytes": 21359,
+            "duration": 1.699025,
+            "text": "We need more supplies for that order."
+          }
+        ],
+        "queueFull": [
+          {
+            "file": "/audio/commander/ashwalkers/queueFull-1-ecb3c64983.mp3",
+            "bytes": 28569,
+            "duration": 2.313515,
+            "text": "Production queue is full. Stand by."
+          }
+        ],
+        "objective": [
+          {
+            "file": "/audio/commander/ashwalkers/objective-1-ae42fd856c.mp3",
+            "bytes": 27629,
+            "duration": 2.223197,
+            "text": "Signal station secured. Keep moving."
+          }
+        ],
+        "wave": [
+          {
+            "file": "/audio/commander/ashwalkers/wave-1-cca0206ffb.mp3",
+            "bytes": 36406,
+            "duration": 2.95746,
+            "text": "Hostile reinforcements inbound. Defend the crossings."
+          }
+        ],
+        "victory": [
+          {
+            "file": "/audio/commander/ashwalkers/victory-1-50dc444430.mp3",
+            "bytes": 33271,
+            "duration": 2.706236,
+            "text": "The woods are ours. Quiet again."
+          }
+        ],
+        "defeat": [
+          {
+            "file": "/audio/commander/ashwalkers/defeat-1-6b58b46b1e.mp3",
+            "bytes": 32331,
+            "duration": 2.630068,
+            "text": "Scatter into the ash. We regroup later."
+          }
+        ],
+        "radioCheck": [
+          {
+            "file": "/audio/commander/ashwalkers/radioCheck-1-9fc9f5bebc.mp3",
+            "bytes": 34839,
+            "duration": 2.836667,
+            "text": "Captain Aske, forest recon. I hear you."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "provider": "ElevenLabs",
+  "voice": {},
+  "music": {
+    "exploration": {
+      "title": "Skerry Watch",
+      "model": "music_v2",
+      "songId": "0PRlFaSJu7ZcOWZN76fQ"
+    },
+    "combat": {
+      "title": "Northern Advance",
+      "model": "music_v2",
+      "songId": "oKbBOSwfmOMKHBeqBySI"
+    },
+    "fjordmouth-exploration": {
+      "title": "Kaldelva Watch",
+      "model": "music_v2",
+      "songId": "vf5gxUb8qiPVA1dq97y6"
+    },
+    "fjordmouth-combat": {
+      "title": "Three Crossings",
+      "model": "music_v2",
+      "songId": "9ococv5j4ajOFfxXK7Kc"
+    },
+    "ironpass-exploration": {
+      "title": "Jernbru Viaduct",
+      "model": "music_v2",
+      "songId": "m0tdbEFHDP7gMoh5idSj"
+    },
+    "ironpass-combat": {
+      "title": "Ridge and Rail",
+      "model": "music_v2",
+      "songId": "pu5j2t4Q1VmzHE8uRn7I"
+    },
+    "glaciercrown-exploration": {
+      "title": "Isvakt",
+      "model": "music_v2",
+      "songId": "GuwdU6SevmCnK3nf6sid"
+    },
+    "glaciercrown-combat": {
+      "title": "Whoever Holds the Crown",
+      "model": "music_v2",
+      "songId": "XSVOKBN8adne5PjE2KiJ"
+    },
+    "skerryharbour-exploration": {
+      "title": "Harbour Town",
+      "model": "music_v2",
+      "songId": "3JcMtGUYjHDWsu2sYvLm"
+    },
+    "skerryharbour-combat": {
+      "title": "Five Bridges",
+      "model": "music_v2",
+      "songId": "O43PxOB5ojy7352a13bG"
+    },
+    "nordlys-exploration": {
+      "title": "Northern Lights",
+      "model": "music_v2",
+      "songId": "DQTGxdX15EmAVKgKBYjS"
+    },
+    "nordlys-combat": {
+      "title": "Eight Crossings",
+      "model": "music_v2",
+      "songId": "KNScsmBbONIMr0xcKv64"
+    }
+  }
+}

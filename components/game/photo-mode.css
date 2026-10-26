@@ -1,0 +1,197 @@
+/* Photo mode: the HUD steps aside and only the battlefield remains. */
+.tactical-game[data-photo-mode] > :not(.tac-scene) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+/* Unit labels and health bars the renderer draws as HTML, plus the drag box. */
+.tactical-game[data-photo-mode] .tac-scene div:not(:has(canvas)) {
+  display: none;
+}
+
+.photo-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  font-family: 'Barlow', 'Inter', system-ui, sans-serif;
+  color: #eef3f8;
+}
+.photo-mode[data-on] {
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+}
+.photo-mode[data-on]::before,
+.photo-mode[data-on]::after {
+  /* Letterbox guides: the frame reads as a camera, not a game. */
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4.5vh;
+  background: linear-gradient(#000000b3, #0000);
+}
+.photo-mode[data-on]::after {
+  inset: auto 0 0;
+  background: linear-gradient(#0000, #000000b3);
+}
+.photo-bar {
+  position: absolute;
+  left: 50%;
+  bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 10px 8px 18px;
+  border: 1px solid #9fb6d040;
+  border-radius: 40px;
+  background: #0f1823d9;
+  backdrop-filter: blur(12px);
+  transform: translateX(-50%);
+  pointer-events: auto;
+  white-space: nowrap;
+}
+.photo-hint {
+  display: grid;
+  font-size: 12px;
+  color: #9db0c4;
+}
+.photo-hint strong {
+  font: 700 13px 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+  color: #ffc48a;
+}
+.photo-shutter {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 3px solid #eef3f8;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.photo-shutter span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff8f3a;
+  transition: transform 0.1s;
+}
+.photo-shutter:hover span {
+  transform: scale(0.92);
+}
+.photo-shutter:active span {
+  transform: scale(0.82);
+}
+.photo-shutter:disabled {
+  opacity: 0.6;
+}
+.photo-close {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #9fb6d040;
+  border-radius: 50%;
+  background: transparent;
+  color: #eef3f8;
+  cursor: pointer;
+}
+.photo-mode button:focus-visible {
+  outline: 2px solid #ffc48a;
+  outline-offset: 2px;
+}
+.photo-flash {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  animation: photo-flash 0.45s ease-out forwards;
+}
+@keyframes photo-flash {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.photo-toast {
+  position: absolute;
+  top: calc(20px + env(safe-area-inset-top, 0px));
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  width: min(360px, calc(100vw - 40px));
+  padding: 10px;
+  border: 1px solid #9fb6d040;
+  border-left: 3px solid #ff8f3a;
+  border-radius: 4px;
+  background: #0f1823f0;
+  box-shadow: 0 12px 34px #02050a99;
+  pointer-events: auto;
+  animation: photo-toast 0.3s ease-out;
+}
+.photo-toast img {
+  width: 120px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.photo-toast > div {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  min-width: 0;
+}
+.photo-toast strong {
+  font: 700 15px 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.photo-toast span {
+  font-size: 11px;
+  color: #9db0c4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.photo-toast > div > div {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+.photo-toast button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: 1px solid #ff8f3a80;
+  border-radius: 3px;
+  background: transparent;
+  color: #ffc48a;
+  font: 700 12px 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@keyframes photo-toast {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+@media (max-width: 600px) {
+  .photo-hint {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .photo-flash,
+  .photo-toast {
+    animation: none;
+    opacity: 0;
+  }
+  .photo-toast {
+    opacity: 1;
+  }
+}

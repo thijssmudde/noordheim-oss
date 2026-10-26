@@ -1,0 +1,268 @@
+/* Superweapon plate and countdowns, top centre between the mission column and the sidebar. */
+.tac-superweapons {
+  position: absolute;
+  top: calc(var(--tac-header) + 12px);
+  left: calc(var(--tac-hud-width) + 24px);
+  right: calc(var(--tac-sidebar) + 12px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+  z-index: 3;
+}
+.tac-superweapons > * {
+  pointer-events: auto;
+}
+.tac-sw-own {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  width: min(390px, 100%);
+  padding: 6px 8px 6px 6px;
+  background: var(--tac-plate);
+  border-left: 3px solid var(--tac-ice-dim);
+}
+.tac-sw-portrait {
+  width: 76px;
+  height: 57px;
+  object-fit: cover;
+  border: 1px solid var(--north-line);
+  border-radius: 3px;
+}
+.tac-sw-readout {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.tac-sw-readout small {
+  font-family: var(--tac-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--tac-muted);
+}
+.tac-sw-readout strong {
+  font-family: var(--tac-display);
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--tac-ink);
+}
+.tac-sw-readout em {
+  font-size: 11px;
+  font-style: normal;
+  color: var(--tac-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tac-sw-charge {
+  position: relative;
+  display: block;
+  height: 5px;
+  margin: 2px 0;
+  background: #0c121b;
+  border: 1px solid #4d607980;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tac-sw-charge::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--p);
+  background: linear-gradient(90deg, var(--tac-ice-dim), var(--tac-ice));
+  transition: width 1s linear;
+}
+.tac-sw-own.is-paused {
+  border-left-color: var(--tac-red);
+}
+.tac-sw-own.is-paused .tac-sw-charge::after {
+  background: repeating-linear-gradient(
+    -45deg,
+    #b0423a,
+    #b0423a 4px,
+    #6e2a27 4px,
+    #6e2a27 8px
+  );
+}
+.tac-sw-own.is-paused .tac-sw-readout em {
+  color: #ff9a8f;
+}
+.tac-sw-own.is-ready {
+  border-left-color: var(--tac-amber);
+  box-shadow:
+    var(--tac-plate-shadow),
+    0 0 0 1px #ff8f3a55,
+    0 0 18px #ff8f3a40;
+}
+.tac-sw-own.is-ready .tac-sw-readout strong {
+  color: var(--tac-amber-ink);
+  animation: tac-sw-ready 1.2s ease-in-out infinite alternate;
+}
+.tac-sw-own.is-ready .tac-sw-charge::after {
+  background: linear-gradient(90deg, var(--tac-amber-dim), var(--tac-amber));
+}
+.tac-sw-own.is-building .tac-sw-readout strong {
+  font-size: 15px;
+}
+.tac-sw-launch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 10px;
+  font-family: var(--tac-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--tac-amber-ink);
+  background: #2a1d14;
+  border: 1px solid var(--tac-amber-dim);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tac-sw-launch kbd {
+  padding: 1px 5px;
+  font-family: inherit;
+  font-size: 10px;
+  color: var(--tac-ice);
+  background: #0c121b;
+  border: 1px solid #5c93bd80;
+  border-radius: 3px;
+}
+.tac-sw-launch:disabled {
+  color: var(--tac-dim);
+  background: #131b27;
+  border-color: #34435c;
+  cursor: not-allowed;
+}
+.tac-sw-launch:not(:disabled):hover,
+.tac-sw-launch[aria-pressed='true'] {
+  color: #1b130c;
+  background: var(--tac-amber);
+  border-color: var(--tac-amber);
+}
+.tac-sw-timers {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tac-sw-timer {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 7px;
+  width: 260px;
+  padding: 5px 9px;
+  font-size: 12px;
+  text-align: left;
+  color: var(--tac-ink);
+  background: #152030eb;
+  border: 1px solid #788aa350;
+  border-left: 3px solid var(--tac-ice);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tac-sw-timer > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tac-sw-timer > strong {
+  font-family: var(--tac-display);
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+}
+.tac-sw-timer > svg {
+  color: var(--tac-ice);
+}
+.tac-sw-timer.is-red {
+  border-left-color: var(--tac-red);
+  background: #2a1517eb;
+}
+.tac-sw-timer.is-red > svg,
+.tac-sw-timer.is-red > strong {
+  color: #ff8a80;
+}
+.tac-sw-timer.is-ready > strong {
+  color: var(--tac-amber-ink);
+  animation: tac-sw-ready 1.2s ease-in-out infinite alternate;
+}
+.tac-sw-timer.is-red.is-ready > strong {
+  color: #ff5a4e;
+}
+.tac-sw-timer.is-paused > strong {
+  opacity: 0.55;
+}
+.tac-sw-timer:hover,
+.tac-sw-timer:focus-visible {
+  border-color: var(--tac-amber);
+  outline: none;
+}
+/* Global warnings reuse the under-attack banner; the garrison's are red. */
+.tac-sw-alert.is-blue {
+  border-left-color: var(--tac-ice);
+}
+.tac-sw-alert.is-blue > svg {
+  color: var(--tac-ice);
+}
+.tac-sw-alert.is-red {
+  color: #ffb0a8;
+  border-left-color: var(--tac-red);
+  box-shadow:
+    0 4px 18px #0d182840,
+    inset 0 0 0 1px #ff5a4e30;
+}
+.tac-sw-alert.is-red > svg {
+  color: var(--tac-red);
+}
+@keyframes tac-sw-ready {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.55;
+  }
+}
+@media (max-width: 900px) {
+  .tac-superweapons {
+    left: 12px;
+    right: 12px;
+  }
+  .tac-sw-timers {
+    display: none;
+  }
+}
+/* The countdown floating over a telegraphed strike. */
+.tac-strike-label {
+  display: inline-block;
+  padding: 3px 8px;
+  font-family: var(--tac-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  color: #ffd0c8;
+  background: #2a1517e0;
+  border: 1px solid #ff5a4e90;
+  border-radius: 3px;
+}
+.tac-strike-label.is-red {
+  color: #d8f2ff;
+  background: #10223ae0;
+  border-color: #7fd4ff90;
+}
+.tac-strike-label:empty {
+  display: none;
+}

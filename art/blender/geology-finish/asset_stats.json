@@ -1,0 +1,130 @@
+{
+  "glacial_spires": {
+    "triangles": 5796,
+    "vertices": 3628,
+    "bounds_blender_xyz": {
+      "min": [-1.2907841205596924, -1.149325966835022, -0.03999999910593033],
+      "max": [1.2003792524337769, 1.0265154838562012, 2.536993980407715]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 225208,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "glacial_scree": {
+    "triangles": 3843,
+    "vertices": 2465,
+    "bounds_blender_xyz": {
+      "min": [-1.0656133890151978, -0.6860457062721252, -0.03999999910593033],
+      "max": [0.8978153467178345, 0.6520963907241821, 0.699999988079071]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 160248,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "basalt_columns": {
+    "triangles": 4692,
+    "vertices": 3234,
+    "bounds_blender_xyz": {
+      "min": [-1.093746542930603, -1.0401231050491333, -0.05999999865889549],
+      "max": [1.1878859996795654, 0.7544824481010437, 2.0399999618530273]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 205296,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "basalt_scree": {
+    "triangles": 6366,
+    "vertices": 4281,
+    "bounds_blender_xyz": {
+      "min": [-1.1347825527191162, -0.7431275844573975, -0.03999999910593033],
+      "max": [0.9091014862060547, 0.6817086935043335, 0.7599999904632568]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 270556,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "granite_1": {
+    "triangles": 6315,
+    "vertices": 4167,
+    "bounds_blender_xyz": {
+      "min": [-1.2595598697662354, -0.7280347347259521, -0.030000001192092896],
+      "max": [1.0865246057510376, 0.8431974053382874, 0.8199999928474426]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 274952,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "granite_dry_1": {
+    "triangles": 5724,
+    "vertices": 3801,
+    "bounds_blender_xyz": {
+      "min": [-1.2595598697662354, -0.7280347347259521, -0.030000001192092896],
+      "max": [1.0865246057510376, 0.8431974053382874, 0.8199999928474426]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 248844,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "granite_2": {
+    "triangles": 5610,
+    "vertices": 3732,
+    "bounds_blender_xyz": {
+      "min": [-1.2943898439407349, -0.657279908657074, -0.030000001192092896],
+      "max": [0.6065064668655396, 0.9096962809562683, 0.8199999928474426]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 241720,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  },
+  "granite_dry_2": {
+    "triangles": 5154,
+    "vertices": 3447,
+    "bounds_blender_xyz": {
+      "min": [-1.2943898439407349, -0.657279908657074, -0.030000001192092896],
+      "max": [0.6065064668655396, 0.9096962809562683, 0.8199999928474426]
+    },
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "material_count": 1,
+    "bytes": 222188,
+    "uv": "UVMap",
+    "colors": "Col",
+    "roughness": 0.96,
+    "pivot": [0, 0, 0]
+  }
+}

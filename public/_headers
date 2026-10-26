@@ -1,0 +1,15 @@
+# Cloudflare static-asset headers (copied to dist/client by the build). vinext only
+# writes its own _headers when this file is absent, so its rule is repeated here.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+# Models are always requested with ?v=MODEL_VERSION (components/game/world/models.ts)
+# and the material textures with ?v=N, so a changed file gets a new URL.
+/models/*
+  Cache-Control: public, max-age=31536000, immutable
+/art/materials/*
+  Cache-Control: public, max-age=31536000, immutable
+# Unversioned art and audio: cache for a day, then revalidate in the background.
+/art/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/audio/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800

@@ -1,0 +1,47 @@
+{
+  "generator": "image_gen.imagegen (built-in)",
+  "assets": [
+    {
+      "name": "frostgate",
+      "prompt": "Use case: style-transfer. Asset type: premium Nordic RTS map illustration. Input image 1 is the edit target, Frostgate. Refine the provided artwork into a substantially higher-quality, highly detailed stylized 3D game environment illustration. Preserve the original high oblique camera, wide landscape composition and map geography: cyan glacier ravine running through the center, snow-covered rocky terraces on both sides, the central steel bridge spanning the chasm, upper-right cluster of weathered red timber utility buildings, small modern olive utility vehicles on the roads, scattered snow-dusted conifers. Keep buildings, bridge, vehicles and paths at coherent game-world scale. Elevate precisely modeled faceted rock and ice forms, deep translucent cyan ice with fine fractures and frosted edges, crisp layered snow drifts, readable packed-snow vehicle routes, metal truss details, worn timber planks, believable roof snow, realistic water and ice floes. Use premium art-directed stylized materials, clear atmospheric depth, soft cool winter daylight with subtle warm sun edge highlights, clean ambient occlusion and controlled shadows so traversable terraces and the bridge are instantly readable. Retain Frostgate's cold pale blue, snow white and dark stone identity; no new major structures or geographic changes. Request output 2560x1440, 16:9 landscape, clean full-bleed high-resolution illustration. No text, labels, UI, border, logo or watermark. Avoid photographic noise, blur, muddy detail, excessive tiny clutter and toy-like scale.",
+      "input_reference_path": "/Users/thijssmudde/projects/noordheim/public/art/maps/frostgate.png",
+      "output_path": "/Users/thijssmudde/.codex/generated_images/01a07bee-38ff-72c1-8e64-ec1ed75b1688/exec-3bea207f-6db1-4c47-ac5c-a1da116c2032.png",
+      "requested_dimensions": {
+        "width": 2560,
+        "height": 1440
+      },
+      "actual_dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "name": "amberfen",
+      "prompt": "Use case: style-transfer. Asset type: premium Nordic RTS map illustration. Input image 1 is the edit target, Amberfen. Refine the provided artwork into a substantially higher-quality, highly detailed stylized 3D game environment illustration. Preserve the original high oblique camera, wide landscape composition and map geography: autumn peat islands enclosed by braided shallow waterways, amber reeds and golden birch clusters mixed with dark conifers, muddy causeways and two visible bridges, broad central playable island, upper-right elevated outpost with weathered red timber utility buildings and water tower, small modern olive utility vehicles. Keep buildings, bridges, vehicles and paths at coherent game-world scale. Elevate precisely modeled gently faceted granite outcrops and eroded peat banks, detailed reeds, gold foliage with clean silhouettes, wet muddy road ruts, shallow water revealing stones with restrained reflections and ripples, well-built metal bridge trusses and timber decks, worn red wood siding and corrugated roof details. Use premium art-directed stylized materials and warm low autumn sunlight, restrained atmospheric haze at the distant edge, coherent shadows and clean ambient occlusion. Improve terrain and route readability, making every island, water channel and causeway distinct while retaining rich natural texture. Preserve Amberfen's warm amber, peat brown, moss green and muted blue-green water palette and established composition; no new major structures or geographic changes. Request output 2560x1440, 16:9 landscape, clean full-bleed high-resolution illustration. No text, labels, UI, border, logo or watermark. Avoid photographic noise, blur, muddy detail, excessive tiny clutter and toy-like scale.",
+      "input_reference_path": "/Users/thijssmudde/projects/noordheim/public/art/maps/amberfen.png",
+      "output_path": "/Users/thijssmudde/.codex/generated_images/01a07bee-38ff-72c1-8e64-ec1ed75b1688/exec-cb6bf6e8-60d9-45c3-a9e0-f6fb0106a854.png",
+      "requested_dimensions": {
+        "width": 2560,
+        "height": 1440
+      },
+      "actual_dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "name": "cinderreach",
+      "prompt": "Use case: style-transfer. Asset type: premium Nordic RTS map illustration. Input image 1 is the edit target, Cinderreach. Refine the provided artwork into a substantially higher-quality, highly detailed stylized 3D game environment illustration. Preserve the original high oblique camera, wide landscape composition and map geography: Icelandic basalt-column terraces and black sand coastal peninsula, sea along left and bottom, winding industrial roads and ramps linking elevations, pale turquoise geothermal pools with rust-orange mineral rims, center-right small geothermal industrial facility and pipes, weathered red timber utility buildings, small modern olive utility vehicles, left coastal dock and lower-right bridge. Keep buildings, roads, bridges, vehicles and pipes at coherent game-world scale. Elevate the individually modeled faceted hexagonal basalt columns with fractures, chipped edges and muted lichen, granular black sand, wet volcanic stone and sparse moss, teal seawater with crisp natural foam contours, softly luminous geothermal water and thin rising steam, worn metal pipes and corrugated roofs, red timber siding. Use premium art-directed stylized materials, clear directional coastal light and gentle atmospheric depth; lift shadow detail and improve local tonal separation so dark roads, column cliffs and flat playable terraces remain instantly readable. Retain Cinderreach's charcoal, muted olive, cool teal and mineral rust identity, grounded Nordic industrial mood, and original composition; no new major structures or geographic changes. Request output 2560x1440, 16:9 landscape, clean full-bleed high-resolution illustration. No text, labels, UI, border, logo or watermark. Avoid crushing dark terrain into black, blur, photographic noise, excessive tiny clutter, lava or fantasy structures and toy-like scale.",
+      "input_reference_path": "/Users/thijssmudde/projects/noordheim/public/art/maps/cinderreach.png",
+      "output_path": "/Users/thijssmudde/.codex/generated_images/01a07bee-38ff-72c1-8e64-ec1ed75b1688/exec-0922b53d-f3b9-409e-9742-28edd43bcf65.png",
+      "requested_dimensions": {
+        "width": 2560,
+        "height": 1440
+      },
+      "actual_dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    }
+  ]
+}

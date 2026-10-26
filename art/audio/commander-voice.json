@@ -1,0 +1,36 @@
+{
+  "provider": "ElevenLabs",
+  "voice": {
+    "id": "PvXoEHSQbw0n1PI2ehXX",
+    "name": "Noordheim — Commander Ravn",
+    "model": "eleven_v4",
+    "description": "An original male Scandinavian military commander in his late forties, speaking clear English with a subtle Norwegian accent. Deep resonant baritone, a little weathered gravel, firm clipped consonants, concise tactical radio delivery. Calm authority under pressure, alert and decisive rather than theatrical or angry. Measured medium pace with energetic short sentences. Clean close microphone, no music, no effects, no shouting."
+  },
+  "music": {},
+  "voices": {
+    "fjordborn": {
+      "id": "kmYe42XIJAfGsCTaISWC",
+      "name": "Noordheim — Captain Sigrid Havn",
+      "model": "eleven_v4",
+      "description": "An original female Scandinavian raider captain in her thirties. Bright, quick and confident alto with salty coastal edge, fast energetic pace, a hint of a grin, eager for the fight. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects."
+    },
+    "ironclad": {
+      "id": "NpJxCZDtTtOJ5wV7SfvF",
+      "name": "Noordheim — Colonel Brand Hammar",
+      "model": "eleven_v4",
+      "description": "An original male Scandinavian fortress colonel in his sixties. Very deep, slow, heavy bass voice with iron gravel, deliberate and unshakable, few words, dry authority, like a mountain speaking. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects."
+    },
+    "hearthkin": {
+      "id": "stWtB0wPt2CLfKtEq3qU",
+      "name": "Noordheim — Major Liv Åker",
+      "model": "eleven_v4",
+      "description": "An original female Scandinavian logistics major in her forties. Warm, grounded, practical mezzo voice with a friendly farmstead lilt, organised and reassuring, brisk medium pace, firm when needed. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects."
+    },
+    "ashwalkers": {
+      "id": "nICbrhK4iuWdPQImt9Ju",
+      "name": "Noordheim — Captain Tor Aske",
+      "model": "eleven_v4",
+      "description": "An original male Scandinavian forest reconnaissance captain in his thirties. Low, hushed, focused baritone, close and intimate like a whisper over a radio, calm and watchful, precise, a little mysterious. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects."
+    }
+  }
+}

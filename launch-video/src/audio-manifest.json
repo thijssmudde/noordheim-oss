@@ -1,0 +1,44 @@
+{
+  "voice": {
+    "open": {
+      "src": "audio/vo-open.mp3",
+      "seconds": 1.901688,
+      "text": "Commander. The northern front is yours."
+    },
+    "build": {
+      "src": "audio/vo-build.mp3",
+      "seconds": 3.03375,
+      "text": "Build your base. Harvest the ore. Keep the power running."
+    },
+    "fight": {
+      "src": "audio/vo-fight.mp3",
+      "seconds": 2.858229,
+      "text": "Send in tanks, rockets and artillery, and take the crossing."
+    },
+    "fronts": {
+      "src": "audio/vo-fronts.mp3",
+      "seconds": 2.57975,
+      "text": "Five fronts, from the Iron Pass to the Nordlys Valley."
+    },
+    "coop": {
+      "src": "audio/vo-coop.mp3",
+      "seconds": 2.526854,
+      "text": "Bring up to seven friends, or hold the fjord alone."
+    },
+    "persist": {
+      "src": "audio/vo-persist.mp3",
+      "seconds": 2.934292,
+      "text": "And the war keeps going, even after you close your browser."
+    },
+    "call": {
+      "src": "audio/vo-call.mp3",
+      "seconds": 2.860375,
+      "text": "Noordheim. Free, in your browser. Deploy now."
+    }
+  },
+  "music": {
+    "src": "audio/music.mp3",
+    "seconds": 63.973875,
+    "title": "Northern Front"
+  }
+}

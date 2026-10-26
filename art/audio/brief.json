@@ -1,0 +1,371 @@
+{
+  "voice": {
+    "name": "Noordheim — Commander Ravn",
+    "description": "An original male Scandinavian military commander in his late forties, speaking clear English with a subtle Norwegian accent. Deep resonant baritone, a little weathered gravel, firm clipped consonants, concise tactical radio delivery. Calm authority under pressure, alert and decisive rather than theatrical or angry. Measured medium pace with energetic short sentences. Clean close microphone, no music, no effects, no shouting.",
+    "preview": "Northern Command, radio check. The fjord is quiet, but it will not stay that way. Establish your perimeter and bring the vehicles online. Keep your crews together. When the signal comes, we move north.",
+    "model": "eleven_v4"
+  },
+  "cues": {
+    "deploy": [
+      "[confident] Northern Command online. Establish your base. Secure the crossings."
+    ],
+    "select": [
+      "Standing by, Commander.",
+      "Your orders?",
+      "Ready for the next move."
+    ],
+    "move": [
+      "Orders received. Moving out.",
+      "On our way.",
+      "Taking position."
+    ],
+    "attack": [
+      "[firm] Target confirmed. Open fire.",
+      "[determined] Engaging the enemy."
+    ],
+    "attackMove": [
+      "[commanding] Advance north. Engage at will."
+    ],
+    "hold": [
+      "Hold this position. Watch the approaches."
+    ],
+    "stop": [
+      "Halt. Awaiting orders."
+    ],
+    "queued": [
+      "Production order confirmed."
+    ],
+    "constructionReady": [
+      "Construction complete. Systems online."
+    ],
+    "unitReady": [
+      "Reinforcements ready for deployment."
+    ],
+    "armorReady": [
+      "Armor is ready. Give us a target."
+    ],
+    "enemySpotted": [
+      "[alert] Enemy contact. Stay sharp."
+    ],
+    "underAttack": [
+      "[urgent] Our forces are taking fire."
+    ],
+    "baseUnderAttack": [
+      "[urgent] Command station under attack! Reinforce the perimeter."
+    ],
+    "unitLost": [
+      "[grim] Unit lost. Regroup and hold the line."
+    ],
+    "lowPower": [
+      "[concerned] Power grid overloaded. Bring another plant online."
+    ],
+    "powerRestored": [
+      "Grid restored. All systems operational."
+    ],
+    "insufficient": [
+      "We need more supplies for that order."
+    ],
+    "queueFull": [
+      "Production queue is full. Stand by."
+    ],
+    "objective": [
+      "Signal station secured. Keep moving."
+    ],
+    "wave": [
+      "[urgent] Hostile reinforcements inbound. Defend the crossings."
+    ],
+    "victory": [
+      "[proud] The fjord is ours. Well fought, Commander."
+    ],
+    "defeat": [
+      "[grave] Command is lost. Fall back. We will return."
+    ],
+    "radioCheck": [
+      "Commander Ravn. Reading you loud and clear."
+    ]
+  },
+  "music": {
+    "exploration": {
+      "title": "Skerry Watch",
+      "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game. 96 BPM, D minor, restrained tactical tension on an icy fjord. Deep pulsing analog bass, delicate metallic arpeggios, muted low strings, sparse military toms, distant bowed Nordic fiddle textures and airy cold synthesizer pads. A memorable understated two-bar motif. Clear space in the midrange for a spoken commander. Steady evolving groove, not a cinematic trailer. No singing, chanting, spoken words or choir. Start directly in the groove. Maintain the same tempo, key and energy with subtle variation for the entire piece, no dramatic ending, no fade-out, suitable for continuous looping under base building. 90 seconds.",
+      "durationMs": 90000,
+      "model": "music_v2"
+    },
+    "combat": {
+      "title": "Northern Advance",
+      "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game. 96 BPM, D minor. Driving industrial military drums, a weighty syncopated distorted bass riff, tight palm-muted electric guitar ostinatos, cold analog synth arpeggios and short low string accents. Subtle bowed Nordic fiddle texture connects it to an icy northern coast. Confident, urgent and rhythmic, with enough headroom and midrange space for radio orders. Instrumental only: no singing, spoken words, chants or choir. Begin immediately with the full steady groove. Maintain consistent rhythm and key with small evolving variations, no breakdowns, no trailer crescendos, no dramatic final hit or fade-out; suitable for looping during long tactical battles. 90 seconds.",
+      "durationMs": 90000,
+      "model": "music_v2"
+    }
+  },
+  "effects": {
+    "rifle": {
+      "duration": 0.6,
+      "prompt": "Single modern assault rifle shot outdoors, sharp crack, short cold echo off rocky fjord cliffs, dry, no music"
+    },
+    "machine": {
+      "duration": 0.8,
+      "prompt": "Short three-round burst from a heavy machine gun outdoors, punchy mechanical rattle, brief echo, no music"
+    },
+    "cannon": {
+      "duration": 1.4,
+      "prompt": "Single tank main cannon shot, deep boom with a sharp blast transient and rolling low tail across open icy terrain, no music"
+    },
+    "rocket": {
+      "duration": 1.2,
+      "prompt": "Shoulder-fired rocket launch, hard ignition pop followed by a fast rushing whoosh flying away, no explosion, no music"
+    },
+    "artillery": {
+      "duration": 1.8,
+      "prompt": "Distant heavy artillery howitzer firing, massive low thump and long rumbling echo across a frozen valley, no music"
+    }
+  },
+  "maps": {
+    "fjordmouth": {
+      "exploration": {
+        "title": "Kaldelva Watch",
+        "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game, calm base-building and scouting phase. Golden-hour sea fjord with a lighthouse and three river crossings. 92 BPM, E minor. Warm low strings, hardanger fiddle drones, gentle tidal synth pulse, distant soft timpani, a hopeful but watchful two-bar motif. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      },
+      "combat": {
+        "title": "Three Crossings",
+        "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game, active battle. Golden-hour sea fjord, fighting over bridges and a hill. 104 BPM, E minor. Pounding taiko and military snare, driving cello ostinato, gritty analog bass, bright brass stabs, hardanger fiddle lead motif. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      }
+    },
+    "ironpass": {
+      "exploration": {
+        "title": "Jernbru Viaduct",
+        "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game, calm base-building and scouting phase. Dawn in a steep mountain gorge with a railway viaduct and iron mines. 88 BPM, C minor. Metallic industrial percussion like distant hammers on rails, low bowed bass, cold anvil-like bell tones, slow grinding synth bass. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      },
+      "combat": {
+        "title": "Ridge and Rail",
+        "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game, active battle. Mountain gorge railway pass under siege. 110 BPM, C minor. Heavy industrial drums, clanging metal percussion, distorted chugging baritone guitar, low brass, relentless machine-like sequencer. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      }
+    },
+    "glaciercrown": {
+      "exploration": {
+        "title": "Isvakt",
+        "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game, calm base-building and scouting phase. Blizzard on a frozen glacier plateau. 80 BPM, B minor. Howling airy pads, glassy bowed crystal textures, sparse deep frame drum, icy granular synth shimmer, lonely nyckelharpa melody. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      },
+      "combat": {
+        "title": "Whoever Holds the Crown",
+        "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game, active battle. Desperate fight on a frozen glacier plateau in a blizzard. 100 BPM, B minor. Thunderous low drums, frantic string spiccato, icy detuned synth leads, huge sub bass swells, nyckelharpa motif. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      }
+    },
+    "skerryharbour": {
+      "exploration": {
+        "title": "Harbour Town",
+        "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game, calm base-building and scouting phase. Overcast fishing harbour town with bridges and cranes among small rocky islands. 94 BPM, A minor. Plucked nyckelharpa and acoustic guitar, soft accordion-like pad, gentle marching snare brushes, creaking wooden percussion, sea-shanty flavoured motif. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      },
+      "combat": {
+        "title": "Five Bridges",
+        "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game, active battle. Street fighting through a harbour town and over its bridges. 108 BPM, A minor. Driving folk-rock drums, stomping kick, gritty fiddle riffs, bass guitar, urgent brass, sea-shanty flavoured motif made aggressive. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      }
+    },
+    "nordlys": {
+      "exploration": {
+        "title": "Northern Lights",
+        "prompt": "Original instrumental soundtrack for a modern Scandinavian real-time strategy game, calm base-building and scouting phase. Long river valley at dusk under shimmering northern lights. 84 BPM, F sharp minor. Lush evolving analog pads, slow arpeggiated synths, deep sub pulse, soft kulning-like lead played on a synth, not a voice, wide and wondrous. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      },
+      "combat": {
+        "title": "Eight Crossings",
+        "prompt": "Original instrumental combat soundtrack for a modern Scandinavian real-time strategy game, active battle. Night battle across a river valley under the aurora. 106 BPM, F sharp minor. Cinematic synthwave-meets-orchestra, pulsing sidechained bass, big tom grooves, soaring synth lead, dark string ostinato. Instrumental only: no singing, spoken words, chants or choir. Leave midrange space for radio orders. Begin directly in the groove, keep tempo, key and energy steady with subtle variation, no breakdown, no dramatic ending, no fade-out; suitable for continuous looping. 90 seconds.",
+        "durationMs": 90000,
+        "model": "music_v2"
+      }
+    }
+  },
+  "commanders": {
+    "fjordborn": {
+      "name": "Captain Sigrid Havn",
+      "description": "An original female Scandinavian raider captain in her thirties. Bright, quick and confident alto with salty coastal edge, fast energetic pace, a hint of a grin, eager for the fight. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects.",
+      "preview": "Havn here. The tide is turning and so are we. Load the boats, keep it quick, and hit them before they wake. Go, go, go.",
+      "cues": {
+        "deploy": [
+          "[energetic] Havn on the line. Build fast, strike faster."
+        ],
+        "select": [
+          "Havn listening.",
+          "[eager] Point us somewhere.",
+          "Ready to raid."
+        ],
+        "move": [
+          "Moving quick!",
+          "Over the shingle.",
+          "[confident] On it."
+        ],
+        "attack": [
+          "[fierce] Hit them hard!",
+          "Board them. Now!"
+        ],
+        "attackMove": [
+          "[energetic] Sweep through, take everything."
+        ],
+        "baseUnderAttack": [
+          "[urgent] They are at the landing! Everyone back!"
+        ],
+        "unitLost": [
+          "[angry] We lost a crew. Keep moving."
+        ],
+        "victory": [
+          "[triumphant] The coast is ours! Good raiding."
+        ],
+        "defeat": [
+          "[bitter] Back to the boats. We come again."
+        ],
+        "radioCheck": [
+          "Captain Havn, coastal raiders. Loud and clear."
+        ]
+      }
+    },
+    "ironclad": {
+      "name": "Colonel Brand Hammar",
+      "description": "An original male Scandinavian fortress colonel in his sixties. Very deep, slow, heavy bass voice with iron gravel, deliberate and unshakable, few words, dry authority, like a mountain speaking. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects.",
+      "preview": "Hammar. The pass is ours as long as the walls stand. Pour the concrete. Load the guns. Let them come to us.",
+      "cues": {
+        "deploy": [
+          "[calm] Hammar. Pour the foundations. We hold here."
+        ],
+        "select": [
+          "Hammar.",
+          "[steady] Speak.",
+          "The garrison waits."
+        ],
+        "move": [
+          "Advancing. Steadily.",
+          "Moving the line.",
+          "[calm] Understood."
+        ],
+        "attack": [
+          "[firm] Guns. Fire.",
+          "Break them."
+        ],
+        "attackMove": [
+          "[steady] Forward. Crush what stands."
+        ],
+        "baseUnderAttack": [
+          "[stern] They test our walls. Man the batteries."
+        ],
+        "unitLost": [
+          "[grim] A loss. The line holds."
+        ],
+        "victory": [
+          "[satisfied] The pass holds. As it always will."
+        ],
+        "defeat": [
+          "[grave] The walls have fallen. We rebuild."
+        ],
+        "radioCheck": [
+          "Colonel Hammar, mountain garrison. Reading you."
+        ]
+      }
+    },
+    "hearthkin": {
+      "name": "Major Liv Åker",
+      "description": "An original female Scandinavian logistics major in her forties. Warm, grounded, practical mezzo voice with a friendly farmstead lilt, organised and reassuring, brisk medium pace, firm when needed. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects.",
+      "preview": "Åker speaking. Harvesters are rolling and the depots are full. Keep the columns moving and we will outlast anyone out here.",
+      "cues": {
+        "deploy": [
+          "[warm] Åker here. Set up the depots, get the harvesters rolling."
+        ],
+        "select": [
+          "Åker here.",
+          "[warm] What do you need?",
+          "Column standing by."
+        ],
+        "move": [
+          "Rolling out.",
+          "On the road.",
+          "[practical] Moving the column."
+        ],
+        "attack": [
+          "[firm] Engage. Protect the column.",
+          "Open fire."
+        ],
+        "attackMove": [
+          "[determined] Push forward, secure the supply line."
+        ],
+        "baseUnderAttack": [
+          "[urgent] The depot is hit! Protect the stores!"
+        ],
+        "unitLost": [
+          "[concerned] We lost a crew. Send another."
+        ],
+        "insufficient": [
+          "[practical] The stores are thin. We need more ore."
+        ],
+        "victory": [
+          "[proud] The valley feeds us now. Fine work."
+        ],
+        "defeat": [
+          "[sad] Load what we can. Fall back to the farms."
+        ],
+        "radioCheck": [
+          "Major Åker, valley logistics. Clear signal."
+        ]
+      }
+    },
+    "ashwalkers": {
+      "name": "Captain Tor Aske",
+      "description": "An original male Scandinavian forest reconnaissance captain in his thirties. Low, hushed, focused baritone, close and intimate like a whisper over a radio, calm and watchful, precise, a little mysterious. Speaking clear English with a subtle Norwegian accent. Concise tactical radio delivery. Clean close microphone, no music, no effects.",
+      "preview": "Aske. Eyes on the treeline. They have not seen us yet. Stay low, stay quiet, and wait for my mark. Then we move.",
+      "cues": {
+        "deploy": [
+          "[quiet] Aske. Scouts out. Find them first."
+        ],
+        "select": [
+          "[quiet] Aske here.",
+          "Watching.",
+          "[whispering] Your call."
+        ],
+        "move": [
+          "[quiet] Moving through the trees.",
+          "Relocating.",
+          "Out of sight."
+        ],
+        "attack": [
+          "[focused] Target marked. Take it.",
+          "Strike from cover."
+        ],
+        "attackMove": [
+          "[quiet] Advance slow. Engage what you see."
+        ],
+        "enemySpotted": [
+          "[alert] Contact. I see them before they see us."
+        ],
+        "baseUnderAttack": [
+          "[urgent] They found the camp. Pull back and fight."
+        ],
+        "unitLost": [
+          "[grim] Lost a scout. Stay hidden."
+        ],
+        "victory": [
+          "[calm] The woods are ours. Quiet again."
+        ],
+        "defeat": [
+          "[quiet] Scatter into the ash. We regroup later."
+        ],
+        "radioCheck": [
+          "Captain Aske, forest recon. I hear you."
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "fjordborn": {
+    "primary": "547c86",
+    "light": "8ab9c0",
+    "dark": "304c58",
+    "accent": "d3bd80",
+    "roof": "486f7a",
+    "skin": "d8b290",
+    "leather": "77523c",
+    "metal": "80969c"
+  },
+  "ironclad": {
+    "primary": "897385",
+    "light": "b6a0b8",
+    "dark": "493d55",
+    "accent": "c5c9d0",
+    "roof": "64556c",
+    "skin": "b99377",
+    "leather": "484446",
+    "metal": "88939f"
+  },
+  "hearthkin": {
+    "primary": "8b994d",
+    "light": "becc7c",
+    "dark": "4f6232",
+    "accent": "e7c774",
+    "roof": "717e45",
+    "skin": "bc8d69",
+    "leather": "90704b",
+    "metal": "8c937f"
+  },
+  "ashwalkers": {
+    "primary": "b2774f",
+    "light": "dba06c",
+    "dark": "604539",
+    "accent": "e3cfad",
+    "roof": "855846",
+    "skin": "8d604e",
+    "leather": "473b37",
+    "metal": "545d60"
+  }
+}

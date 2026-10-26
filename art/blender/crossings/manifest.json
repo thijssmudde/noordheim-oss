@@ -1,0 +1,78 @@
+{
+  "bridge_suspension": {
+    "file": "/Users/thijssmudde/.codex/art-assets/noordheim-crossings/bridge_suspension.glb",
+    "bytes": 304248,
+    "triangles": 3412,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "bounds": {
+      "min": [-5.25, -1.155, -8.0],
+      "max": [5.25, 6.62, 8.0]
+    },
+    "walkable": {
+      "x": [-4.9, 4.9],
+      "y": 0.6,
+      "z": [-8, 8]
+    },
+    "nominal_size": [10.5, 16],
+    "axis": "glTF Y up; scale X width/10.5, Z length/16; preserve Y"
+  },
+  "bridge_timber": {
+    "file": "/Users/thijssmudde/.codex/art-assets/noordheim-crossings/bridge_timber.glb",
+    "bytes": 195464,
+    "triangles": 2180,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "bounds": {
+      "min": [-5.25, -2.185, -8.0],
+      "max": [5.25, 1.65, 8.0]
+    },
+    "walkable": {
+      "x": [-4.9, 4.9],
+      "y": 0.6,
+      "z": [-8, 8]
+    },
+    "nominal_size": [10.5, 16],
+    "axis": "glTF Y up; scale X width/10.5, Z length/16; preserve Y"
+  },
+  "bridge_pontoon": {
+    "file": "/Users/thijssmudde/.codex/art-assets/noordheim-crossings/bridge_pontoon.glb",
+    "bytes": 608552,
+    "triangles": 6700,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "bounds": {
+      "min": [-5.25, -1.0, -8.0],
+      "max": [5.25, 1.21, 8.0]
+    },
+    "walkable": {
+      "x": [-4.9, 4.9],
+      "y": 0.6,
+      "z": [-8, 8]
+    },
+    "nominal_size": [10.5, 16],
+    "axis": "glTF Y up; scale X width/10.5, Z length/16; preserve Y"
+  },
+  "bridge_causeway": {
+    "file": "/Users/thijssmudde/.codex/art-assets/noordheim-crossings/bridge_causeway.glb",
+    "bytes": 236476,
+    "triangles": 2502,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "bounds": {
+      "min": [-5.25, -2.2, -8.0],
+      "max": [5.25, 1.255, 8.0]
+    },
+    "walkable": {
+      "x": [-4.9, 4.9],
+      "y": 0.6,
+      "z": [-8, 8]
+    },
+    "nominal_size": [10.5, 16],
+    "axis": "glTF Y up; scale X width/10.5, Z length/16; preserve Y"
+  }
+}

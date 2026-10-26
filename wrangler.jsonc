@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "noordheim",
+  "account_id": "fff0485f31c33d2795ea40722be3329b",
+  "main": "vinext/server/fetch-handler",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "noordheim.com", "custom_domain": true },
+    { "pattern": "www.noordheim.com", "custom_domain": true },
+  ],
+  "observability": { "enabled": true },
+}

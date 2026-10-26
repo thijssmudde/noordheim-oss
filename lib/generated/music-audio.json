@@ -1,0 +1,88 @@
+{
+  "tracks": {
+    "exploration": {
+      "file": "/audio/music/exploration-980750f30d.mp3",
+      "bytes": 1409819,
+      "duration": 88.044082,
+      "title": "Skerry Watch"
+    },
+    "combat": {
+      "file": "/audio/music/combat-fb5818a88a.mp3",
+      "bytes": 1409819,
+      "duration": 88.044082,
+      "title": "Northern Advance"
+    }
+  },
+  "maps": {
+    "fjordmouth": {
+      "exploration": {
+        "file": "/audio/music/fjordmouth/exploration-e7a7f7f6c9.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Kaldelva Watch"
+      },
+      "combat": {
+        "file": "/audio/music/fjordmouth/combat-4cd9bf9805.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Three Crossings"
+      }
+    },
+    "ironpass": {
+      "exploration": {
+        "file": "/audio/music/ironpass/exploration-9a57abc912.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Jernbru Viaduct"
+      },
+      "combat": {
+        "file": "/audio/music/ironpass/combat-1ef30e06ba.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Ridge and Rail"
+      }
+    },
+    "glaciercrown": {
+      "exploration": {
+        "file": "/audio/music/glaciercrown/exploration-20855c1508.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Isvakt"
+      },
+      "combat": {
+        "file": "/audio/music/glaciercrown/combat-e8395fae11.mp3",
+        "bytes": 1408565,
+        "duration": 87.965714,
+        "title": "Whoever Holds the Crown"
+      }
+    },
+    "skerryharbour": {
+      "exploration": {
+        "file": "/audio/music/skerryharbour/exploration-0f43d2d7d6.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Harbour Town"
+      },
+      "combat": {
+        "file": "/audio/music/skerryharbour/combat-e886f983b4.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Five Bridges"
+      }
+    },
+    "nordlys": {
+      "exploration": {
+        "file": "/audio/music/nordlys/exploration-6d67e50b4e.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Northern Lights"
+      },
+      "combat": {
+        "file": "/audio/music/nordlys/combat-67f7f5f26b.mp3",
+        "bytes": 1409819,
+        "duration": 88.044082,
+        "title": "Eight Crossings"
+      }
+    }
+  }
+}

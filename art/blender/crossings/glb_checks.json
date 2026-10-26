@@ -1,0 +1,46 @@
+{
+  "bridge_suspension": {
+    "bytes": 304248,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "attributes": ["POSITION", "NORMAL", "TEXCOORD_0", "COLOR_0"],
+    "bounds": [
+      [-5.25, -1.1549999713897705, -8],
+      [5.25, 6.619999885559082, 8]
+    ]
+  },
+  "bridge_timber": {
+    "bytes": 195464,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "attributes": ["POSITION", "NORMAL", "TEXCOORD_0", "COLOR_0"],
+    "bounds": [
+      [-5.25, -2.184999942779541, -8],
+      [5.25, 1.649999976158142, 8]
+    ]
+  },
+  "bridge_pontoon": {
+    "bytes": 608552,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "attributes": ["POSITION", "NORMAL", "TEXCOORD_0", "COLOR_0"],
+    "bounds": [
+      [-5.25, -1, -8],
+      [5.25, 1.2100000381469727, 8]
+    ]
+  },
+  "bridge_causeway": {
+    "bytes": 236476,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": 1,
+    "attributes": ["POSITION", "NORMAL", "TEXCOORD_0", "COLOR_0"],
+    "bounds": [
+      [-5.25, -2.200000047683716, -8],
+      [5.25, 1.2549999952316284, 8]
+    ]
+  }
+}

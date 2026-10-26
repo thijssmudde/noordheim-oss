@@ -1,0 +1,17 @@
+{
+  "voice": "Commander Ravn",
+  "lines": [
+    { "id": "open", "text": "Commander. The northern front is yours." },
+    { "id": "build", "text": "Build your base. Harvest the ore. Keep the power running." },
+    { "id": "fight", "text": "Send in tanks, rockets and artillery, and take the crossing." },
+    { "id": "fronts", "text": "Five fronts, from the Iron Pass to the Nordlys Valley." },
+    { "id": "coop", "text": "Bring up to seven friends, or hold the fjord alone." },
+    { "id": "persist", "text": "And the war keeps going, even after you close your browser." },
+    { "id": "call", "text": "Noordheim. Free, in your browser. Deploy now." }
+  ],
+  "music": {
+    "title": "Northern Front",
+    "durationMs": 64000,
+    "prompt": "Epic cinematic trailer score for a Nordic Cold War strategy game. 0-10s: icy wind, a lone Hardanger fiddle melody over a low cello drone. 10-24s: steady military snare and deep taiko drums enter, low strings pulse. 24-46s: brass and wordless male choir build with rising tension, driving ostinato strings. 46-56s: full orchestral climax with big percussion hits. 56-64s: one final massive hit, then a ringing, hopeful resolve on the fiddle and fade to silence. Instrumental, no vocals, no lyrics."
+  }
+}

@@ -1,0 +1,2163 @@
+/* The interface belongs to the same world as the timber, granite and winter heath. */
+.tactical-game {
+  --tac-ink: var(--north-ivory);
+  --tac-muted: var(--north-muted);
+  --tac-dim: #6f8399;
+  --tac-steel-900: #0c121b;
+  --tac-steel-800: #131b27;
+  --tac-steel-700: #1b2432;
+  --tac-steel-600: #26334a;
+  --tac-steel-500: #34435c;
+  --tac-edge: #4d6079;
+  --tac-amber: var(--north-brass);
+  --tac-amber-dim: #c26a25;
+  --tac-amber-ink: #ffc48a;
+  --tac-ice: #a9dcff;
+  --tac-ice-dim: #5c93bd;
+  --tac-green: #8fd97a;
+  --tac-red: #ff5a4e;
+  --tac-plate: var(--north-panel);
+  --tac-plate-shadow: 0 5px 20px #09152538;
+}
+/* Floating instruments keep the battlefield visible through the gaps. */
+.tactical-game {
+  --tac-header: calc(64px + env(safe-area-inset-top, 0px));
+  --tac-deck: calc(152px + env(safe-area-inset-bottom, 0px));
+  --tac-sidebar: 264px;
+  --tac-hud-width: 224px;
+}
+.tac-scene {
+  inset: 0;
+}
+.tac-topbar {
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  height: calc(var(--tac-header) - 12px);
+  padding: 0;
+  background: #152030f5;
+  border: 1px solid var(--north-line);
+  box-shadow: 0 4px 20px #0d182830;
+  border-radius: 4px;
+}
+.tac-brand {
+  width: 205px;
+  border-right: 1px solid var(--north-line);
+  box-shadow: none;
+  padding: 6px 14px;
+}
+.tac-insignia {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  clip-path: none;
+}
+.tac-brand strong {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.tac-brand span {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: var(--tac-muted);
+}
+.tac-stat {
+  border-right: 1px solid var(--north-line);
+  box-shadow: none;
+  min-width: 120px;
+  padding-inline: 14px;
+}
+.tac-stat small {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.tac-stat strong {
+  font-weight: 500;
+}
+.tac-credits {
+  min-width: 170px;
+}
+.tac-readout {
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+  letter-spacing: 0.5px;
+}
+.tac-stat em {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.tac-stat-icon {
+  color: var(--tac-amber);
+}
+.tac-status {
+  margin-left: auto;
+  border: 0;
+}
+.tac-operations-button {
+  margin: 8px;
+  border: 1px solid var(--north-line);
+  border-radius: 3px !important;
+  padding-inline: 12px;
+  background: #2f3a4a;
+}
+.tac-icon-button {
+  border: 0;
+  box-shadow: none;
+}
+.tac-plate {
+  border: 1px solid var(--north-line);
+  border-radius: 4px;
+  box-shadow: var(--tac-plate-shadow);
+}
+.tac-rivets::after {
+  display: none;
+}
+.tac-panel-heading {
+  background: #111c2ce6;
+  border-bottom: 1px solid var(--north-line);
+  box-shadow: none;
+  padding: 7px 11px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+.tac-panel-heading > span:last-child {
+  font-size: 12px;
+}
+.tac-sidebar {
+  top: calc(var(--tac-header) + 12px);
+  right: 12px;
+  bottom: 12px;
+  padding: 0;
+  gap: 10px;
+  width: calc(var(--tac-sidebar) - 12px);
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+.tac-radar .tac-map-frame {
+  aspect-ratio: 1.75;
+  padding: 6px;
+  background: #111c2c;
+  box-shadow: none;
+}
+.tac-radar-glass,
+.tac-radar-sweep {
+  display: none;
+}
+.tac-map-base {
+  border-color: #62769240;
+}
+.tac-sidebar-body {
+  gap: 0;
+}
+.tac-power-column {
+  display: none;
+}
+.tac-production {
+  overflow: hidden;
+  background: #1b2432f5;
+}
+.tac-production-tabs {
+  padding: 0;
+  gap: 0;
+  background: #151f2c;
+  border-bottom: 1px solid var(--north-line);
+}
+.tac-production-tabs button {
+  height: 48px;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  gap: 4px;
+}
+.tac-production-tabs button small {
+  font-size: 11px;
+  letter-spacing: 0.1px;
+  text-transform: none;
+}
+.tac-production-tabs button[aria-selected='true'] {
+  background: #2d3949;
+  box-shadow: inset 0 -2px var(--tac-amber);
+}
+.tac-tab-title {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.tac-production-body {
+  padding: 8px;
+}
+.tac-cameo-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.tac-cameo {
+  aspect-ratio: 0.9;
+  background: radial-gradient(ellipse at 50% 25%, #485669, #232f3f 75%);
+  border: 1px solid #66768c50;
+  box-shadow: none;
+  border-radius: 3px !important;
+}
+.tac-cameo::after {
+  display: none;
+}
+.tac-cameo:hover:not(:disabled) {
+  border-color: var(--tac-amber);
+  box-shadow: none;
+}
+.tac-cameo .tac-portrait {
+  filter: none;
+}
+.tac-cameo-name {
+  height: auto;
+  min-height: 25px;
+  padding: 4px 2px;
+  background: #0d1828f2;
+  font-size: 12px;
+  letter-spacing: 0.15px;
+  border-top: 1px solid #77869a30;
+  line-height: 1.1;
+}
+.tac-cameo-cost {
+  background: #111c2ce0;
+  color: #ffc48a;
+  font-size: 12px;
+}
+.tac-cameo-info {
+  min-height: 88px;
+  padding: 10px;
+  background: #141f2f;
+  border-top: 1px solid var(--north-line);
+  box-shadow: none;
+}
+.tac-cameo-info strong {
+  font-size: 14px;
+}
+.tac-cameo-info p,
+.tac-hint,
+.tac-cameo-info > span {
+  font-size: 12px;
+}
+.tac-mission-panel {
+  top: calc(var(--tac-header) + 16px);
+  left: 18px;
+  width: 216px;
+  gap: 10px;
+  max-height: calc(100% - var(--tac-header) - var(--tac-deck) - 28px);
+}
+.tac-sector-caption {
+  padding-bottom: 4px;
+}
+.tac-sector-caption h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+.tac-sector-caption > span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.tac-sector-caption p {
+  font-size: 12px;
+}
+.tac-objectives.tac-plate {
+  background: #1b2432e8;
+}
+.tac-objective {
+  min-height: 39px;
+  padding: 7px 10px;
+  border-top: 0;
+  box-shadow: none;
+}
+.tac-objective > span {
+  background: none;
+  border: 0;
+  font-size: 13px;
+}
+.tac-objective strong {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+.tac-mission-foot {
+  display: none;
+}
+.tac-events-title,
+.tac-event,
+.tac-allies {
+  background: #152030e8;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.tac-event p {
+  font-size: 12px;
+  color: var(--tac-ink);
+}
+.tac-events .tac-events-title {
+  background: none;
+  border: 0;
+  font-size: 12px;
+  padding-left: 0;
+}
+.tac-allies {
+  font-size: 12px;
+  border: 0;
+}
+.tac-command-deck {
+  bottom: 12px;
+  left: 12px;
+  right: calc(var(--tac-sidebar) + 12px);
+  height: calc(var(--tac-deck) - 12px);
+  padding: 0;
+  grid-template-columns: 112px minmax(240px, 300px) minmax(0, 1fr);
+  gap: 10px;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+.tac-commander-radio {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #152030;
+}
+.tac-commander-radio > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.tac-commander-radio-copy {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 20px 7px 7px;
+  background: linear-gradient(transparent, #08111cee 40%);
+}
+.tac-commander-radio-copy > span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--tac-ice);
+  font: 600 9px var(--tac-display);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.tac-commander-radio-copy > strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--tac-ink);
+  font: 600 12px / 1.15 var(--tac-display);
+}
+.tac-commander-radio.is-speaking {
+  border-color: var(--tac-green);
+  box-shadow: 0 0 12px #8fd97a30;
+}
+.tac-commander-radio.is-speaking .tac-commander-radio-copy > span {
+  color: var(--tac-green);
+}
+.tac-selection-panel,
+.tac-orders {
+  background: #1b2432f2;
+  overflow: hidden;
+}
+.tac-portrait-frame {
+  width: 90px;
+  height: 78px;
+  flex: 0 0 90px !important;
+  background: radial-gradient(ellipse at 50% 35%, #465264, #1d2b3e);
+  border: 1px solid var(--north-line);
+  box-shadow: none;
+  border-radius: 3px;
+}
+.tac-portrait-frame::after {
+  display: none;
+}
+.tac-unit-detail {
+  gap: 10px;
+  padding: 10px;
+}
+.tac-unit-detail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+.tac-unit-detail p,
+.tac-unit-detail small {
+  font-size: 12px;
+}
+.tac-roster {
+  min-height: 66px;
+  padding: 6px 8px;
+  background: none;
+  border-bottom: 1px solid var(--north-line);
+  box-shadow: none;
+}
+.tac-select-all,
+.tac-unit-card {
+  height: 50px;
+  width: 52px;
+  min-width: 52px;
+  border: 1px solid var(--north-line);
+  background: #273445;
+  box-shadow: none;
+}
+.tac-unit-card.selected {
+  border-color: var(--tac-amber);
+  box-shadow: inset 0 -2px var(--tac-amber);
+}
+.tac-order-buttons {
+  gap: 5px;
+  padding: 6px 8px;
+}
+.tac-order-buttons button {
+  height: 44px;
+  min-height: 44px;
+  background: #263244;
+  border: 1px solid var(--north-line);
+  box-shadow: none;
+  border-radius: 3px;
+}
+.tac-order-buttons button span {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+.tac-order-buttons button kbd {
+  color: var(--tac-muted);
+  background: none;
+  border: 0;
+  font-size: 12px;
+}
+.tac-order-buttons button.armed {
+  background: #404f63;
+  box-shadow: none;
+  border-color: var(--tac-amber);
+}
+.tac-order-buttons button:disabled {
+  opacity: 0.42;
+}
+.tac-health {
+  height: 4px;
+  border: 0;
+  background: #0e1825;
+  box-shadow: none;
+}
+.tac-camera-tools {
+  bottom: calc(var(--tac-deck) + 12px);
+  right: calc(var(--tac-sidebar) + 12px);
+  gap: 5px;
+}
+.tac-camera-tools button {
+  background: #1b2432eb;
+  border: 1px solid var(--north-line);
+  box-shadow: none;
+  border-radius: 3px;
+  color: var(--tac-ink);
+}
+.tac-world-tag,
+.tac-objective-label,
+.tac-ore-label {
+  background: #152030d9;
+  border-color: #99aac240;
+  border-radius: 3px;
+}
+.tac-ore-label b {
+  color: #ffad66;
+}
+.tac-primary {
+  background: var(--north-brass);
+  border-color: #f9ae6d;
+  color: #1a2432 !important;
+  box-shadow: none;
+  border-radius: 3px !important;
+}
+.tac-primary:hover:not(:disabled) {
+  background: #ffb472;
+}
+.tac-help {
+  background: var(--north-panel-solid) !important;
+  color: var(--north-ivory) !important;
+  border: 1px solid #8fa1ba50 !important;
+  border-radius: 5px !important;
+  box-shadow: 0 28px 90px #050c16a0 !important;
+}
+.tac-help dd {
+  color: var(--north-muted);
+}
+.tac-tech-node,
+.tac-operation-settings,
+.tac-difficulty-option {
+  background: #152234;
+  border-color: #74839950;
+  box-shadow: none;
+}
+.tac-difficulty-option.selected {
+  background: #2f3d50;
+  border-color: var(--north-brass);
+  box-shadow: none;
+}
+.tac-research-action,
+.tac-build-action,
+.tac-placement-actions button {
+  background: #313f52;
+  border-color: #74839960;
+  box-shadow: none;
+}
+.tac-toast,
+.tac-command-prompt,
+.tac-radio-caption {
+  background: #152030f2;
+  border-color: #788aa350;
+  box-shadow: 0 4px 18px #0d182840;
+  border-radius: 4px;
+}
+
+/* The operation hub floats over the chosen battlefield like the entrance. */
+.tactical-game.operation-hub {
+  --ops-hub-pad-y: clamp(24px, 4vh, 44px);
+  background: #0a121c;
+  padding: var(--ops-hub-pad-y) clamp(24px, 5vw, 72px);
+}
+.ops-shell {
+  position: relative;
+  width: min(820px, 100%);
+  margin-left: auto;
+  margin-right: 0;
+  z-index: 1;
+}
+.ops-header {
+  margin-bottom: 24px;
+}
+.ops-header h1 {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 24px #05080acc;
+}
+.ops-brand {
+  color: var(--north-brass);
+}
+.ops-biome {
+  color: var(--map-accent, var(--north-muted));
+}
+.ops-callsign {
+  text-shadow: 0 1px 6px #05080a;
+}
+.ops-mode {
+  padding: 16px 14px;
+  border-color: #9fb6d040;
+  border-radius: 4px;
+  background: #0f1823cc;
+  backdrop-filter: blur(14px) saturate(1.1);
+  box-shadow: 0 10px 30px #05080a66;
+}
+.ops-mode.selected {
+  background: #1d2a3bd9;
+  border-color: #ff8f3a;
+  box-shadow: 0 10px 30px #05080a66;
+}
+.ops-mode strong {
+  font-size: 21px;
+  font-weight: 500;
+}
+.ops-mode > .ops-mode-copy > span {
+  font-size: 14px;
+}
+.ops-panel {
+  padding: 26px;
+  border: 1px solid #9fb6d040;
+  border-radius: 5px;
+  background: #0f1823d9;
+  backdrop-filter: blur(18px) saturate(1.1);
+  box-shadow: 0 28px 80px #05080a99;
+}
+.ops-panel .sponsor-credit.is-compact,
+.operation-hub .sponsor-credit.is-compact {
+  border-color: #9fb6d040;
+  border-left-color: var(--north-brass);
+  border-radius: 3px;
+  background: #0f1823cc;
+  backdrop-filter: blur(10px);
+}
+.ops-panel h2 {
+  font-weight: 500;
+}
+.ops-field input,
+.ops-field select {
+  background: #0f1b2c;
+  border-color: #72829870;
+  border-radius: 3px;
+}
+.ops-invite,
+.ops-roster li {
+  background: #121e2f;
+  border-color: var(--north-line);
+}
+.ops-open-lobbies li,
+.ops-withdraw {
+  border-color: var(--north-line);
+}
+
+/* Control groups ride just above the command deck, one plate per bound number. */
+.tac-control-groups {
+  position: absolute;
+  left: 12px;
+  bottom: calc(var(--tac-deck) + 6px);
+  display: flex;
+  gap: 4px;
+  z-index: 16;
+  pointer-events: none;
+}
+.tac-control-group {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  padding: 0 8px 0 3px;
+  background: #1b2432f2;
+  border: 1px solid var(--north-line);
+  border-radius: 3px;
+  box-shadow: var(--tac-plate-shadow);
+  color: var(--tac-muted);
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.12s,
+    background 0.12s,
+    color 0.12s;
+}
+.tac-control-group:hover {
+  border-color: #ff8f3a90;
+  background: #2f3e52;
+  color: var(--tac-ink);
+}
+.tac-control-group[data-active] {
+  border-color: var(--tac-amber);
+  box-shadow:
+    inset 0 -2px var(--tac-amber),
+    var(--tac-plate-shadow);
+  background: #33425a;
+  color: var(--tac-ink);
+}
+.tac-control-group kbd {
+  display: grid;
+  place-items: center;
+  min-width: 20px;
+  height: 22px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--tac-amber-ink);
+  background: #0c121b;
+  border: 1px solid #ff8f3a55;
+  border-radius: 2px;
+}
+.tac-control-group[data-active] kbd {
+  color: #0c121b;
+  background: var(--tac-amber);
+  border-color: var(--tac-amber);
+}
+.tac-control-group-icon {
+  width: 30px;
+  height: 22px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: radial-gradient(ellipse at 50% 35%, #465264, #1d2b3e);
+}
+.tac-control-group-icon .tac-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tac-control-group-count {
+  min-width: 12px;
+  font-size: 13px;
+  color: var(--tac-ice);
+}
+.tac-control-group-count::before {
+  content: '· ';
+  color: var(--tac-dim);
+}
+
+@media (max-width: 1150px) {
+  .tac-brand {
+    width: 180px;
+  }
+  .tac-stat {
+    min-width: 105px;
+    padding-inline: 10px;
+  }
+  .tac-credits {
+    min-width: 140px;
+  }
+  .tac-ore {
+    display: none;
+  }
+  .tac-command-deck {
+    grid-template-columns: 88px minmax(210px, 250px) minmax(0, 1fr);
+  }
+  .tac-order-buttons button {
+    gap: 4px;
+  }
+  .tac-order-buttons button kbd {
+    display: none;
+  }
+  .tac-order-buttons button svg {
+    width: 16px;
+  }
+  .ops-shell {
+    width: 100%;
+  }
+}
+@media (max-height: 760px) and (min-width: 961px) {
+  .tac-event:nth-of-type(n + 3) {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .tac-command-deck {
+    grid-template-columns: 80px 220px minmax(0, 1fr);
+  }
+  .tac-portrait-frame {
+    width: 70px;
+    flex-basis: 70px !important;
+  }
+  .tac-unit-detail h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .tactical-game {
+    --tac-header: calc(60px + env(safe-area-inset-top, 0px));
+    --tac-sidebar: 0px;
+    --tac-deck: calc(150px + env(safe-area-inset-bottom, 0px));
+  }
+  .tac-topbar {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+  }
+  .tac-brand {
+    width: 160px;
+  }
+  .tac-brand strong {
+    font-size: 17px;
+  }
+  .tac-sidebar {
+    display: none;
+    width: 280px;
+    top: calc(var(--tac-header) + 8px);
+    bottom: calc(var(--tac-deck) + 12px);
+    right: 8px;
+    background: #172333;
+    padding: 8px;
+    border: 1px solid var(--north-line);
+    border-radius: 4px;
+  }
+  .tac-sidebar.is-open {
+    display: flex;
+  }
+  .tac-radar {
+    display: none;
+  }
+  .tac-mobile-build {
+    display: flex;
+  }
+  .tac-mission-panel {
+    display: none;
+    width: 225px;
+    top: calc(var(--tac-header) + 10px);
+    max-width: calc(100% - 24px);
+    background: #141f2fe8;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .tac-mission-panel.is-open {
+    display: flex;
+  }
+  .tac-mobile-caption {
+    display: block;
+    top: calc(var(--tac-header) + 14px);
+    left: 16px;
+  }
+  .tac-command-deck {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+  }
+  .tac-camera-tools {
+    right: 8px;
+  }
+  .tac-feedback-stack {
+    max-width: calc(100% - 32px);
+  }
+}
+@media (max-width: 600px) {
+  .tactical-game {
+    --tac-deck: calc(143px + env(safe-area-inset-bottom, 0px));
+  }
+  .tac-brand {
+    width: 42px;
+    padding: 0;
+    justify-content: center;
+  }
+  .tac-brand > div:last-child {
+    display: none;
+  }
+  .tac-credits {
+    min-width: 95px;
+    padding-inline: 8px;
+    gap: 5px;
+  }
+  .tac-credits .tac-readout {
+    min-width: 58px;
+    font-size: 21px;
+  }
+  .tac-stat {
+    min-width: 76px;
+    padding-inline: 8px;
+    gap: 4px;
+  }
+  .tac-stat > svg {
+    width: 14px;
+  }
+  .tac-stat strong {
+    font-size: 19px;
+  }
+  .tac-stat small {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .tac-stat em,
+  .tac-tier,
+  .tac-status,
+  .tac-power-meter {
+    display: none;
+  }
+  .tac-icon-button {
+    width: 32px;
+    min-width: 32px;
+    padding: 0;
+  }
+  .tac-operations-button {
+    padding: 6px;
+    margin: 8px 4px;
+  }
+  .tac-command-deck {
+    grid-template-columns: 70px minmax(0, 1fr);
+    height: calc(var(--tac-deck) - 8px);
+  }
+  .tac-commander-radio {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tac-commander-radio-copy {
+    padding: 14px 4px 4px;
+  }
+  .tac-commander-radio-copy > strong {
+    display: none;
+  }
+  .tac-selection-panel {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .tac-selection-panel {
+    display: none;
+  }
+  .tac-orders {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-rows: 64px 1fr;
+  }
+  .tac-roster {
+    min-height: 64px;
+  }
+  .tac-order-buttons button span {
+    font-size: 14px;
+  }
+  .tac-order-buttons button kbd {
+    display: inline;
+  }
+  .ops-header h1 {
+    font-size: 34px;
+  }
+  .tactical-game.operation-hub {
+    --ops-hub-pad-y: 28px;
+    padding: var(--ops-hub-pad-y) 18px;
+  }
+  .ops-panel {
+    padding: 20px;
+  }
+  .ops-modes {
+    grid-template-columns: 1fr;
+  }
+  .ops-mode {
+    padding: 12px 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tactical-game * {
+    animation: none !important;
+    scroll-behavior: auto;
+  }
+}
+.interface-review-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 7px;
+  border: 1px solid #8ea5c540;
+  border-radius: 0 4px 4px 0;
+  background: #0d1828ee;
+  color: #ffb87b;
+  font:
+    12px 'Barlow Condensed',
+    sans-serif;
+}
+.interface-review-nav > span {
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  opacity: 0.65;
+}
+.interface-review-nav button {
+  padding: 4px;
+  color: #b3bcc8;
+}
+.interface-review-nav button[aria-pressed='true'] {
+  color: #ffb87b;
+  border-bottom: 1px solid;
+}
+
+/* Review refinements: legible names and controls against the 3D scene. */
+.tac-production-body {
+  background: #141f2f;
+}
+.tac-cameo-name {
+  white-space: normal;
+  text-align: center;
+  min-height: 30px;
+  padding: 3px 2px;
+}
+.tac-cameo > .tac-portrait {
+  inset: 3px 2px 31px;
+  height: calc(100% - 34px);
+}
+.tac-cameo-lock,
+.tac-cameo-progress {
+  bottom: 30px;
+}
+.tac-cameo-count {
+  bottom: 31px;
+}
+.tac-orders {
+  padding: 0;
+  gap: 0;
+}
+.tac-order-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.tac-order-buttons button {
+  width: auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px;
+}
+.tac-order-buttons button kbd {
+  position: static;
+}
+.tac-order-buttons[data-structure='true'] {
+  grid-template-columns: minmax(0, 1fr);
+}
+.tac-order-buttons .tac-remove-building {
+  width: 100%;
+  border-color: #865043;
+  background: #382725;
+}
+.tac-order-buttons .tac-remove-building svg {
+  color: #f4c3b6;
+}
+.tac-order-buttons .tac-remove-building span {
+  white-space: normal;
+  line-height: 1.3;
+}
+.tac-batch-size button {
+  background: #263244;
+  box-shadow: none;
+  border-color: var(--north-line);
+}
+.tac-batch-size > span {
+  font-size: 12px;
+}
+@media (max-width: 1100px) and (min-width: 901px) {
+  .tac-order-buttons button {
+    gap: 4px;
+  }
+  .tac-order-buttons button span {
+    font-size: 12px;
+  }
+  .tac-order-buttons button svg {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .tac-order-buttons button {
+    gap: 5px;
+  }
+  .tac-order-buttons button span {
+    font-size: 12px;
+  }
+  .tac-order-buttons button svg {
+    width: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .tactical-game {
+    --tac-deck: calc(224px + env(safe-area-inset-bottom, 0px));
+  }
+  .tac-command-deck {
+    grid-template-rows: minmax(74px, 1fr) 128px;
+    gap: 6px;
+  }
+  .tac-selection-panel {
+    display: flex;
+  }
+  .tac-selection-panel > .tac-panel-heading {
+    display: none;
+  }
+  .tac-selection-panel .tac-unit-detail {
+    padding: 7px;
+    gap: 8px;
+  }
+  .tac-selection-panel .tac-portrait-frame {
+    flex-basis: 52px !important;
+    width: 52px;
+    height: 50px;
+  }
+  .tac-unit-detail h2 {
+    font-size: 16px;
+  }
+  .tac-unit-detail > div > p {
+    display: none;
+  }
+  .tac-unit-detail small {
+    margin-top: 2px;
+  }
+  .tac-unit-detail .tac-health {
+    margin-top: 5px;
+  }
+  .tac-structure-actions {
+    margin-top: 3px;
+  }
+  .tac-camera-tools {
+    bottom: calc(var(--tac-deck) + 8px);
+  }
+  .tac-sidebar {
+    bottom: calc(var(--tac-deck) + 52px);
+  }
+}
+
+/* Polish: plates catch a cold top light, headings carry a signal edge, controls answer the pointer. */
+.tactical-game .tac-plate,
+.tac-topbar {
+  background-image: linear-gradient(180deg, #ffffff08, #ffffff00 48px);
+  box-shadow:
+    inset 0 1px #ffffff10,
+    var(--tac-plate-shadow);
+}
+.tac-topbar {
+  background-color: #131d2bf2;
+  backdrop-filter: blur(10px) saturate(1.1);
+}
+.tac-brand {
+  background: linear-gradient(90deg, #ff8f3a14, #ff8f3a00);
+}
+.tac-credits .tac-readout {
+  color: var(--tac-amber-ink);
+  text-shadow: 0 0 14px #ff8f3a40;
+}
+.tac-panel-heading {
+  position: relative;
+  background: linear-gradient(90deg, #1a2638f0, #111c2ce6);
+}
+.tac-panel-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  bottom: 7px;
+  width: 2px;
+  background: var(--tac-amber);
+}
+.tac-selection-panel,
+.tac-orders,
+.tac-production,
+.tac-objectives.tac-plate {
+  backdrop-filter: blur(8px);
+}
+.tac-events-title,
+.tac-event,
+.tac-allies {
+  border: 1px solid #8fa1ba24;
+}
+.tac-event {
+  border-left: 2px solid var(--tac-ice-dim);
+}
+.tac-production-tabs button {
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.tac-production-tabs button:hover:not([aria-selected='true']) {
+  background: #222e3e;
+}
+.tac-production-tabs button[aria-selected='true'] {
+  background: linear-gradient(180deg, #2d3949, #34425a);
+  color: var(--tac-amber-ink);
+}
+.tac-cameo {
+  transition:
+    border-color 0.12s,
+    transform 0.12s,
+    filter 0.12s;
+}
+.tac-cameo:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.12);
+}
+.tac-cameo:disabled {
+  filter: saturate(0.55) brightness(0.8);
+}
+.tac-cameo-cost {
+  border-bottom-right-radius: 3px;
+}
+.tac-select-all,
+.tac-unit-card {
+  border-radius: 3px;
+  transition:
+    border-color 0.12s,
+    background 0.12s;
+}
+.tac-select-all:hover,
+.tac-unit-card:hover {
+  border-color: #ff8f3a90;
+  background: #2f3e52;
+}
+.tac-unit-card.selected {
+  background: #33425a;
+}
+.tac-order-buttons button {
+  background: linear-gradient(180deg, #2a374a, #222d3d);
+  transition:
+    border-color 0.12s,
+    background 0.12s;
+}
+.tac-order-buttons button:hover:not(:disabled) {
+  border-color: #ff8f3a90;
+  background: linear-gradient(180deg, #33435a, #2a374a);
+}
+.tac-order-buttons button:disabled {
+  opacity: 1;
+  background: #1a2330;
+  border-color: #4d607950;
+  color: var(--tac-dim);
+}
+.tac-order-buttons button:disabled svg,
+.tac-order-buttons button:disabled kbd {
+  opacity: 0.6;
+}
+.tac-order-buttons button.armed {
+  background: linear-gradient(180deg, #4a3a2c, #3a2f26);
+  color: var(--tac-amber-ink);
+}
+.tac-camera-tools button {
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.12s,
+    color 0.12s;
+}
+.tac-camera-tools button:hover {
+  border-color: var(--tac-amber);
+  color: var(--tac-amber-ink);
+}
+.tac-operations-button {
+  transition: border-color 0.12s;
+}
+.tac-operations-button:hover {
+  border-color: var(--tac-amber);
+}
+.tac-portrait-frame {
+  box-shadow: inset 0 0 0 1px #ff8f3a30;
+}
+.tac-unit-detail {
+  scrollbar-color: #4d6079 transparent;
+}
+@media (min-width: 601px) {
+  .tac-unit-detail {
+    padding: 7px 10px;
+  }
+  .tac-unit-detail small {
+    margin-top: 3px;
+    line-height: 1.35;
+  }
+}
+
+/* Lobby: the same instrument plate as the entrance card. Scoped under
+   .tactical-game so the generic plate sheen (.tactical-game .tac-plate) can't
+   replace this dark fill and leave the panel see-through over bright maps.
+   The gradient alone keeps text above 5:1 even over white snow, so the base
+   fill stays clear and the panel keeps its glass. */
+.ops-panel {
+  position: relative;
+}
+.tactical-game .ops-panel {
+  background-color: transparent;
+  background-image:
+    linear-gradient(180deg, #ffffff08, #ffffff00 48px),
+    linear-gradient(180deg, #16212fe6, #0d1520eb 40%);
+  box-shadow:
+    inset 0 1px #ffffff12,
+    0 28px 80px #05080a99;
+}
+.ops-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(90deg, var(--tac-amber), #ff8f3a00 85%);
+}
+.ops-header h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.ops-lobby-heading h2 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.ops-lobby-heading > strong {
+  padding: 4px 12px;
+  border: 1px solid #ff8f3a60;
+  border-radius: 3px;
+  background: #ff8f3a14;
+  font-size: 24px;
+}
+.ops-invite {
+  border: 1px solid var(--north-line);
+  border-left: 3px solid var(--tac-amber);
+  border-radius: 3px;
+  background: #0b1420;
+}
+.ops-invite span {
+  font-family: var(--tac-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.ops-invite strong {
+  font-size: 34px;
+  letter-spacing: 7px;
+  text-shadow: 0 0 18px #ff8f3a40;
+}
+.ops-invite button {
+  border-color: var(--tac-amber) !important;
+  color: var(--tac-amber-ink) !important;
+  background: transparent !important;
+  border-radius: 3px;
+}
+.ops-invite button:hover {
+  background: #ff8f3a22 !important;
+}
+.ops-panel > p.ops-muted {
+  font-size: 14px;
+}
+.ops-lobby-columns h3,
+.ops-panel .map-select legend,
+.ops-panel .tac-difficulty-heading,
+.ops-panel .ops-field {
+  font-family: var(--tac-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--tac-muted);
+}
+.ops-lobby-columns h3 {
+  margin-bottom: 10px;
+}
+.ops-roster li {
+  border-radius: 3px;
+  background: #121c2a;
+}
+.ops-roster li:has(strong) {
+  background: linear-gradient(90deg, #1f2b3d, #152030);
+  border-left: 3px solid var(--tac-ice-dim);
+}
+.ops-roster li:not(:has(strong)) {
+  border-style: dashed;
+  background: #0f182480;
+}
+.ops-slot {
+  min-width: 26px;
+  color: var(--tac-dim);
+}
+.ops-roster li:has(strong) .ops-slot {
+  color: var(--tac-ice);
+}
+.ops-host {
+  padding: 3px 8px;
+  border: 1px solid #ff8f3a60;
+  border-radius: 3px;
+  font-family: var(--tac-display);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ops-panel .map-select-options {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.ops-panel .map-select-option {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--north-line);
+  border-radius: 3px;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.ops-panel .map-select-option img {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  opacity: 0.85;
+}
+.ops-panel .map-select-option > span {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 18px 8px 6px;
+  background: linear-gradient(transparent, #05080ae6);
+}
+.ops-panel .map-select-option strong {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px #000;
+}
+.ops-panel .map-select-option small {
+  font-size: 10px;
+  color: var(--tac-muted);
+}
+.ops-panel .map-select-option:hover:not(.is-selected) {
+  border-color: #cfdcec70;
+}
+.ops-panel .map-select-option.is-selected {
+  border-color: var(--map-accent, var(--tac-amber));
+  box-shadow: inset 0 -2px var(--map-accent, var(--tac-amber));
+}
+.ops-panel .map-select-option.is-selected img {
+  opacity: 1;
+}
+.ops-panel .map-select-detail {
+  font-size: 13px;
+  color: var(--tac-muted);
+}
+.ops-panel .tac-operation-settings {
+  border-color: var(--north-line);
+}
+.ops-panel .tac-difficulty-option {
+  border-radius: 3px;
+  background: #0b1420;
+  border-color: #6b778870;
+  color: var(--tac-ink);
+}
+.ops-panel .tac-difficulty-option:hover {
+  border-color: #ff8f3a70;
+}
+.ops-panel .tac-difficulty-option.selected {
+  background: #2a3648;
+  border-color: var(--tac-amber);
+  box-shadow: inset 0 -2px var(--tac-amber);
+  color: var(--tac-amber-ink);
+}
+.ops-panel .tac-difficulty-details {
+  padding: 8px 10px;
+  border-radius: 3px;
+  background: #0b1420;
+  color: var(--tac-amber-ink);
+}
+.ops-panel .tac-primary,
+.tac-game-over-card .tac-primary {
+  min-height: 52px;
+  font-size: 19px;
+  letter-spacing: 1.8px;
+  background: linear-gradient(180deg, #ffa257, var(--north-brass));
+  box-shadow:
+    inset 0 1px #ffffff55,
+    0 8px 24px #ff8f3a33;
+}
+.ops-panel .tac-primary:hover:not(:disabled),
+.tac-game-over-card .tac-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ffbd84, #ffa257);
+}
+.ops-leave {
+  width: 100%;
+  color: var(--tac-muted) !important;
+}
+.ops-leave:hover {
+  color: var(--tac-amber-ink) !important;
+  background: #ffffff08 !important;
+}
+/* The launch row is the plate's bottom rail: it sticks to the foot of the
+   scroll view while the roster and map picker scroll under it, then settles
+   into place at the end of the panel so nothing stays hidden behind it. */
+.ops-lobby-actions {
+  position: sticky;
+  /* Sit on the viewport edge, not on the hub's bottom padding. */
+  bottom: calc(-1 * var(--ops-hub-pad-y, 0px));
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 16px;
+  margin: 26px -26px -26px;
+  padding: 14px 26px max(14px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--north-line);
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(180deg, #16212f, #0d1520);
+  backdrop-filter: blur(18px) saturate(1.1);
+  box-shadow:
+    inset 0 1px #ffffff0d,
+    0 -16px 32px #05080a8c;
+}
+.ops-lobby-actions .tac-primary,
+.ops-lobby-actions .ops-waiting {
+  flex: 1;
+  margin: 0;
+}
+.ops-lobby-actions .ops-waiting {
+  min-height: 52px;
+}
+.ops-lobby-actions .ops-leave {
+  width: auto;
+  margin: 0;
+}
+@media (max-width: 960px) {
+  .ops-lobby-actions {
+    margin: 20px -20px -20px;
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .ops-lobby-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding-top: 12px;
+  }
+  /* One line of label keeps the rail short enough to leave the roster in view. */
+  .ops-lobby-actions .tac-primary {
+    min-height: 48px;
+    padding-inline: 12px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  }
+  .ops-lobby-actions .ops-leave {
+    width: 100%;
+    min-height: 34px;
+  }
+}
+
+/* Debrief: a defeat plate with a red signal edge over a cold vignette. */
+.tactical-game.tac-game-over {
+  background:
+    radial-gradient(ellipse at 50% 18%, #5a2c2466, #0000 55%),
+    radial-gradient(ellipse at 50% 40%, #1b2638, #0a121c 75%);
+}
+.tac-game-over-card {
+  position: relative;
+  background: linear-gradient(180deg, #1d2636f2, #121a26f2 50%);
+  box-shadow:
+    inset 0 1px #ffffff12,
+    0 28px 80px #05080acc;
+}
+.tac-game-over-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(90deg, #ff5a4e00, var(--tac-red), #ff5a4e00);
+}
+.tac-game-over-mark {
+  padding: 14px;
+  width: 84px;
+  height: 84px;
+  border: 1px solid #ff5a4e50;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff5a4e22, #ff5a4e00 70%);
+  color: #ff8a7e;
+}
+.tac-game-over-card .tac-eyebrow {
+  color: #ff8a7e;
+  letter-spacing: 3px;
+}
+.tac-game-over-card h1 {
+  color: #fbfcf7;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-shadow: 0 6px 30px #05080acc;
+}
+.tac-game-over-reason {
+  color: var(--tac-muted);
+  font-size: 17px;
+}
+.tac-game-over-stats {
+  gap: 8px;
+  padding: 0;
+  border: 0;
+}
+.tac-game-over-stats > div {
+  padding: 12px 8px;
+  border: 1px solid var(--north-line);
+  border-radius: 3px;
+  background: #0b1420;
+}
+.tac-game-over-stats dt {
+  font-family: var(--tac-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.tac-game-over-stats dd {
+  font-family: var(--tac-display);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.tac-game-over-card .sponsor-credit {
+  background: #0b1420;
+}
+
+/* Victory debrief: the same plate, struck in brass over a cold, clear dawn. */
+.tactical-game.tac-game-over.is-victory {
+  background:
+    radial-gradient(ellipse at 50% 18%, #ff8f3a33, #0000 55%),
+    radial-gradient(ellipse at 50% 40%, #1b2638, #0a121c 75%);
+}
+.is-victory .tac-game-over-card {
+  border-top-color: var(--north-brass);
+}
+.is-victory .tac-game-over-card::before {
+  background: linear-gradient(90deg, #ff8f3a00, var(--north-brass), #ff8f3a00);
+}
+.is-victory .tac-game-over-mark {
+  border-color: #ff8f3a66;
+  background: radial-gradient(circle, #ff8f3a2e, #ff8f3a00 70%);
+  color: var(--tac-amber-ink);
+}
+.is-victory .tac-game-over-card .tac-eyebrow {
+  color: var(--tac-amber-ink);
+}
+.is-victory .tac-game-over-card h1 {
+  color: #fff6ec;
+  text-shadow:
+    0 0 36px #ff8f3a40,
+    0 6px 30px #05080acc;
+}
+.is-victory .tac-game-over-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Operation complete: the battlefield holds still under a brass banner, the
+   instruments fall back, and a fuse burns down to the debrief. */
+.tactical-game.is-complete
+  > :not(.tac-scene, .tac-topbar, .tac-victory-region, .interface-review-nav) {
+  opacity: 0.18;
+  filter: saturate(0.3);
+  pointer-events: none;
+  transition:
+    opacity 0.8s ease,
+    filter 0.8s ease;
+}
+.tac-victory-region {
+  position: absolute;
+  inset: calc(var(--tac-header) + 24px) 16px auto;
+  display: grid;
+  justify-items: center;
+  pointer-events: none;
+  z-index: 30;
+}
+.tac-victory-banner {
+  position: relative;
+  pointer-events: auto;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  width: min(640px, 100%);
+  padding: 22px 32px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #1d2636f5, #121a26f5);
+  border: 1px solid var(--north-line);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 1px #ffffff12,
+    0 0 0 1px #05080a,
+    0 28px 80px #05080acc;
+  animation: tac-victory-in 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+.tac-victory-banner::before,
+.tac-victory-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(90deg, #ff8f3a00, var(--north-brass), #ff8f3a00);
+}
+.tac-victory-banner::after {
+  inset: auto 0 0;
+  border-radius: 0 0 4px 4px;
+}
+.tac-victory-mark {
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ff8f3a66;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff8f3a2e, #ff8f3a00 70%);
+  color: var(--tac-amber-ink);
+}
+.tac-victory-banner .tac-eyebrow {
+  color: var(--tac-ice);
+}
+.tac-victory-banner h2 {
+  margin: 0;
+  font-family: var(--tac-display);
+  font-size: clamp(34px, 6vw, 56px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #fff6ec;
+  text-shadow:
+    0 0 36px #ff8f3a55,
+    0 6px 30px #05080acc;
+}
+.tac-victory-banner p {
+  margin: 4px 0 10px;
+  max-width: 46ch;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--tac-muted);
+}
+.tac-victory-debrief {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px 11px;
+  font-family: var(--tac-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--tac-amber-ink);
+  background: #0b1420;
+  border: 1px solid #ff8f3a66;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tac-victory-debrief:hover {
+  color: #fff6ec;
+  border-color: var(--north-brass);
+}
+.tac-victory-debrief:focus-visible {
+  outline: 2px solid var(--tac-ice);
+  outline-offset: 2px;
+}
+.tac-victory-fuse {
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: var(--north-brass);
+  transform-origin: left;
+  animation: tac-victory-fuse 6s linear 0.7s both;
+}
+@keyframes tac-victory-in {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.96);
+  }
+}
+@keyframes tac-victory-fuse {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 640px) {
+  .tac-victory-banner {
+    padding: 18px 16px 16px;
+  }
+  .tac-victory-banner h2 {
+    letter-spacing: 2px;
+  }
+}
+
+/* Field manual: the title stays pinned while the briefing scrolls. */
+.tac-help::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(90deg, var(--north-brass), #ff8f3a00 85%);
+}
+.tac-help > [data-slot='dialog-title'] {
+  position: sticky;
+  top: -16px;
+  z-index: 1;
+  margin: -16px -16px 0;
+  padding: 18px 16px 10px;
+  background: var(--north-panel-solid);
+  box-shadow: 0 1px var(--north-line);
+}
+.tac-help dl {
+  gap: 0;
+  margin-top: 4px;
+}
+.tac-help dt,
+.tac-help dd {
+  padding: 12px 0;
+  border-bottom: 1px solid #9fb6d018;
+}
+.tac-help dl > :nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+.tac-help > [data-slot='dialog-close'] {
+  z-index: 2;
+}
+
+/* Under-attack alerts: a signal-orange notice and pulsing radar pings. */
+.tac-attack-alert-slot {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.tac-attack-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  padding: 9px 12px 9px 14px;
+  font-family: var(--tac-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--tac-amber-ink);
+  background: #152030f2;
+  border: 1px solid #788aa350;
+  border-left: 3px solid var(--tac-amber);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 18px #0d182840,
+    inset 0 0 0 1px #ff8f3a1f;
+  cursor: pointer;
+  animation: tac-attack-alert 6s ease-out forwards;
+}
+.tac-attack-alert > svg {
+  flex-shrink: 0;
+  color: var(--tac-amber);
+  animation: tac-attack-siren 0.6s steps(2, jump-none) 5;
+}
+.tac-attack-alert kbd {
+  padding: 2px 6px;
+  font-family: inherit;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--tac-ice);
+  background: #0c121b;
+  border: 1px solid #5c93bd80;
+  border-radius: 3px;
+}
+.tac-attack-alert:hover,
+.tac-attack-alert:focus-visible {
+  border-color: var(--tac-amber);
+  outline: none;
+}
+.tac-attack-alert.is-units {
+  border-left-color: var(--tac-ice);
+}
+.tac-attack-alert.is-units > svg {
+  color: var(--tac-ice);
+}
+@keyframes tac-attack-alert {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  4%,
+  80% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes tac-attack-siren {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.35;
+  }
+}
+.tac-map-ping {
+  fill: none;
+  stroke: var(--tac-amber);
+  stroke-width: 2.5;
+  animation: tac-map-ping-fade linear forwards;
+}
+.tac-map-ping > circle:first-child {
+  fill: var(--tac-amber);
+  stroke: #0c121b;
+  stroke-width: 1;
+}
+.tac-map-ping.is-units {
+  stroke: var(--tac-ice);
+}
+.tac-map-ping.is-units > circle:first-child {
+  fill: var(--tac-ice);
+}
+.tac-map-ping-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: tac-map-ping-pulse 1s ease-out infinite;
+}
+@keyframes tac-map-ping-pulse {
+  from {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes tac-map-ping-fade {
+  0%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* How to play: a labelled entry to the field manual beside Operations. */
+.tac-help-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 8px 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--north-line);
+  border-radius: 3px !important;
+  background: #2f3a4a;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.tac-help-button svg {
+  color: var(--tac-ice);
+}
+.tac-help-button:hover {
+  background: #3a4859;
+}
+@media (max-width: 1150px) {
+  .tac-help-button span {
+    display: none;
+  }
+  .tac-help-button {
+    padding: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .tac-help-button {
+    margin: 8px 0 8px 4px;
+  }
+}
+
+/* The first-match coach: the top plate of the left column, one objective at a time. */
+.tac-coach.tac-plate {
+  background: #1b2432f2;
+  border-color: #ff8f3a70;
+  box-shadow:
+    0 0 0 1px #ff8f3a26,
+    var(--tac-plate-shadow);
+  backdrop-filter: blur(8px);
+}
+.tac-coach-pips {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 3px;
+  margin: 0;
+  padding: 8px 11px 0;
+  list-style: none;
+}
+.tac-coach-pips li {
+  height: 4px;
+  border-radius: 1px;
+  background: #34435c;
+}
+.tac-coach-pips li.is-done {
+  background: var(--tac-ice);
+}
+.tac-coach-pips li.is-current {
+  background: var(--tac-amber);
+}
+.tac-coach-done {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 11px 0;
+  font-size: 12px;
+  color: var(--tac-ice);
+  animation: tac-coach-in 0.4s ease-out;
+}
+.tac-coach-body {
+  padding: 6px 11px 0;
+  animation: tac-coach-in 0.4s ease-out;
+}
+.tac-coach-body strong {
+  display: block;
+  font-family: var(--tac-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 1.15;
+  color: var(--tac-ink);
+}
+.tac-coach-body p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--north-muted);
+}
+.tac-coach-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 10px 11px 11px;
+}
+.tac-coach-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid var(--north-line);
+  border-radius: 3px !important;
+  background: #2f3a4a;
+  font-family: var(--tac-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.tac-coach-actions button:hover {
+  background: #3a4859;
+}
+.tactical-game .tac-coach .tac-coach-skip {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  font-family: var(--tac-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--north-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.tac-coach .tac-coach-skip:hover {
+  color: var(--tac-ink);
+}
+.tactical-game .tac-coach-actions .tac-coach-next {
+  background: var(--north-brass);
+  border-color: #f9ae6d;
+  color: #1a2432;
+}
+.tac-coach-actions .tac-coach-next:hover {
+  background: #ffb472;
+}
+@keyframes tac-coach-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+/* The blueprint the coach asks for, and the hammer that opens it on touch. */
+.tac-cameo.coached,
+.tac-mobile-build.coached {
+  border-color: var(--tac-amber) !important;
+  animation: tac-coach-glow 1.4s ease-in-out infinite;
+}
+.tac-mobile-build.coached {
+  color: var(--tac-amber);
+}
+@keyframes tac-coach-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px var(--tac-amber),
+      0 0 0 0 #ff8f3a00;
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px var(--tac-amber),
+      0 0 14px 2px #ff8f3a99;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tac-cameo.coached,
+  .tac-mobile-build.coached,
+  .tac-coach-done,
+  .tac-coach-body {
+    animation: none;
+  }
+}
+/* On narrow screens the objectives drawer is closed, but the coach stays up. */
+@media (max-width: 1000px), (max-height: 600px) {
+  .tac-mission-panel.has-coach:not(.is-open) {
+    display: flex;
+    width: min(300px, calc(100% - 24px));
+    max-width: none;
+    padding: 0;
+    background: none;
+  }
+  .tac-mission-panel.has-coach:not(.is-open) > :not(.tac-coach),
+  .tactical-game:has(.tac-mission-panel.has-coach:not(.is-open))
+    .tac-mobile-caption {
+    display: none;
+  }
+  /* The production drawer takes the screen; the glowing blueprint leads on. */
+  .tac-mission-panel.has-coach.is-covered:not(.is-open) {
+    display: none;
+  }
+  .tac-mission-panel .tac-coach .tac-panel-heading > .tac-coach-skip {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .tac-coach-body strong {
+    font-size: 17px;
+  }
+  .tac-coach-body p {
+    font-size: 12px;
+  }
+}
+
+/* How to play: illustrated steps, in the launcher sheet and the field manual. */
+.how-to-play {
+  max-width: min(620px, calc(100vw - 32px)) !important;
+}
+.how-to-play-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.how-to-play-steps li {
+  display: flex;
+  gap: 11px;
+  padding: 11px;
+  border: 1px solid var(--north-line);
+  border-radius: 4px;
+  background: #131c29;
+}
+.how-to-play-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #26334a;
+  color: var(--tac-ice);
+}
+.how-to-play-icon b {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--north-brass);
+  color: #1a2432;
+  font-family: var(--tac-display);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.how-to-play-steps strong {
+  display: block;
+  font-family: var(--tac-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--tac-ink);
+}
+.how-to-play-steps p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--north-muted);
+}
+@media (max-width: 560px) {
+  .how-to-play-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.tac-restart-tutorial {
+  justify-content: center !important;
+}
+.tac-help-heading {
+  margin: 8px 0 0;
+  font-family: var(--tac-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--tac-amber-ink);
+}
